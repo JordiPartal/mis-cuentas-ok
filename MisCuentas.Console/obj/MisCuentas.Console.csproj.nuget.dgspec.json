@@ -1,0 +1,227 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj": {}
+  },
+  "projects": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj",
+        "projectName": "MisCuentas.Console",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj",
+        "packagesPath": "/home/studio/.nuget/packages/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/studio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/home/studio/.dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj"
+              },
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "projectName": "MisCuentas.Domain",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "packagesPath": "/home/studio/.nuget/packages/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/studio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/home/studio/.dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
+        "projectName": "MisCuentas.Infrastructure",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
+        "packagesPath": "/home/studio/.nuget/packages/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/studio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/home/studio/.dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvExport": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

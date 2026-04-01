@@ -1,0 +1,4 @@
+#principal > div:first-child {
+    height: 10vh;
+    background-color: whitesmoke;
+}
