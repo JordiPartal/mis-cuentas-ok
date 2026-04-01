@@ -95,6 +95,7 @@ public class Validacion
         {
             "NOMINA"   => (int)tipoTransaccion.Nomina,
             "RENTING"  => (int)tipoTransaccion.Renting,
+            "TRANSPORTE" => (int)tipoTransaccion.Transporte,
             "OCIO"     => (int)tipoTransaccion.Ocio,
             "INGRESO"  => (int)tipoTransaccion.Ingreso,
             _          => (int)tipoTransaccion.Simple

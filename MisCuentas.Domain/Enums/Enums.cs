@@ -6,5 +6,6 @@ public enum tipoTransaccion
     Simple = 2,
     Renting = 3,
     Ocio = 4,
-    Ingreso = 5
+    Ingreso = 5,
+    Transporte = 6
 }

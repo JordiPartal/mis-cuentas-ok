@@ -145,6 +145,7 @@ public class ImpresoraDeConsola
         Console.WriteLine("> Nomina");
         Console.WriteLine("> Simple");
         Console.WriteLine("> Renting");
+        Console.WriteLine("> Transporte");
         Console.WriteLine("> Ocio");
         Console.WriteLine("> Ingreso");
         Console.WriteLine();
