@@ -5,49 +5,101 @@
     <projectFile profileName="http">MisCuentas.Web/MisCuentas.Web.csproj</projectFile>
     <projectFile profileName="https">MisCuentas.Web/MisCuentas.Web.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb33e253-15fa-47c3-9bc4-9e3190f696db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MisCuentas.Web/Components/Pages/Resume.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MisCuentas.Web/Components/Pages/Resume.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mis-cuentas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mis-cuentas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Console.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/bin/Debug/net8.0/MisCuentas.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/MisCuentas.Console.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/MisCuentas.Console.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/ref/MisCuentas.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/ref/MisCuentas.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/refint/MisCuentas.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/Debug/net8.0/refint/MisCuentas.Console.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Console/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Console/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/Interface/IRentabilidadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/Interface/IRentabilidadService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/bin/Debug/net8.0/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/bin/Debug/net8.0/MisCuentas.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/bin/Debug/net8.0/MisCuentas.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/bin/Debug/net8.0/MisCuentas.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/MisCuentas.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/MisCuentas.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/MisCuentas.Domain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/ref/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/ref/MisCuentas.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/refint/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/Debug/net8.0/refint/MisCuentas.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/ref/MisCuentas.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/ref/MisCuentas.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/refint/MisCuentas.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/Debug/net8.0/refint/MisCuentas.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/Components/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/Components/Pages/Cabecera.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/MisCuentas.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/MisCuentas.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/rbcswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/MisCuentas.Web.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MisCuentas.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisCuentas.Web/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/MisCuentas.Web/wwwroot/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,6 +116,9 @@
     &quot;accountId&quot;: &quot;7ff37a63-fce6-4246-959a-c8d1d197861e&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MisCuentas.Web/Components/Pages/Resume.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -74,14 +129,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.MisCuentas.Web: https.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.MisCuentas.Console">
+  <component name="RunManager" selected=".NET Launch Settings Profile.MisCuentas.Web: https">
     <configuration name="MisCuentas.Console" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -146,6 +209,8 @@
       <option name="presentableId" value="Default" />
       <updated>1775008308351</updated>
       <workItem from="1775008313629" duration="37000" />
+      <workItem from="1775070358626" duration="11644000" />
+      <workItem from="1775082688822" duration="2841000" />
     </task>
     <servers />
   </component>

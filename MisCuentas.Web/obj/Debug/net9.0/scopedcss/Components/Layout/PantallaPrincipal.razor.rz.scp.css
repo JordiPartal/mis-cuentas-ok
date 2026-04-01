@@ -1,0 +1,7 @@
+#_resume[b-rcgk2zprur] {
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 64px;
+}

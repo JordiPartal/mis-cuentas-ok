@@ -1,8 +1,28 @@
+@page "/"
+@using MisCuentas.Domain.Interface
+@using MisCuentas.Domain.Models
+@using MisCuentas.Web.Components.Pages
 @inherits LayoutComponentBase
+@inject IBalanceService balanceService
 
-<div id = "principal">
-    <div />
-    <div>
-        @Body    
-    </div>
+<div id="_resume">
+    <Resume campo = "@ingreso" valor = "@_balance.ingresos.ToString("C")"/>
+    <Resume campo = "@gastos" valor = "@_balance.gastos.ToString("C")"/>
+    <Resume campo = "@ahorro" valor = "@_balance.ahorro.ToString("C")"/>
+    <Resume campo = "@ganancia" valor = "@_balance.ganancia.ToString("P2")"/>
 </div>
+
+@code
+{
+    private Balance _balance = new();
+
+    private string ingreso = "Ingresos Mensuales";
+    private string gastos = "Gastos Mensuales";
+    private string ahorro = "Ahorrado durante el mes";
+    private string ganancia = "Ahorrado en (%)";
+    
+    protected override void OnInitialized()
+    {
+        _balance = balanceService.Balance(DateTime.Now.Month, DateTime.Now.Year);
+    }
+}

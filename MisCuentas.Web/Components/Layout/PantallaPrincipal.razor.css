@@ -1,4 +1,7 @@
-#principal > div:first-child {
-    height: 10vh;
-    background-color: whitesmoke;
+#_resume {
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 64px;
 }

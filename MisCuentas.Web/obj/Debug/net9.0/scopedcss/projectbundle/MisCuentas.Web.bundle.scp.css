@@ -1,0 +1,43 @@
+/* _content/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor.rz.scp.css */
+#_resume[b-rcgk2zprur] {
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 64px;
+}
+/* _content/MisCuentas.Web/Components/Pages/Resume.razor.rz.scp.css */
+._container[b-d0qm61p55s] {
+    height: 250px;
+    background-color: aliceblue;
+    border: 1px solid darkgray;
+    border-radius: 0 128px 0 0;
+    display: flex;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+._container > div[b-d0qm61p55s] {
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+}
+
+._container > div > h1[b-d0qm61p55s] {
+    color: steelblue;
+    font-family: "Anybody", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;  
+    margin: 4px auto 24px auto;
+}
+
+._container > div > h2[b-d0qm61p55s] {
+    color: darkslategray;
+    font-family: "Anybody", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4px auto;
+}

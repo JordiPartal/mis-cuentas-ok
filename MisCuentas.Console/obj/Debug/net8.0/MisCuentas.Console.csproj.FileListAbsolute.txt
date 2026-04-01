@@ -49,9 +49,9 @@
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.AssemblyInfo.cs
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.CoreCompileInputs.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.sourcelink.json
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.csproj.CopyComplete
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.dll
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/refint/MisCuentas.Console.dll
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.pdb
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuentas.Console.genruntimeconfig.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/ref/MisCuentas.Console.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/Debug/net8.0/MisCuent.1585A372.Up2Date

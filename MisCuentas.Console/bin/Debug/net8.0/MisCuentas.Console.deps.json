@@ -353,7 +353,10 @@
       },
       "MisCuentas.Domain/1.0.0": {
         "runtime": {
-          "MisCuentas.Domain.dll": {}
+          "MisCuentas.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MisCuentas.Infrastructure/1.0.0": {
@@ -366,7 +369,10 @@
           "MySql.Data": "9.6.0"
         },
         "runtime": {
-          "MisCuentas.Infrastructure.dll": {}
+          "MisCuentas.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
