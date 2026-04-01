@@ -1,0 +1,15 @@
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.deps.json
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Infrastructure.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.AssemblyReference.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfoInputs.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.AssemblyInfo.cs
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.csproj.CoreCompileInputs.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuent.4427C720.Up2Date
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/refint/MisCuentas.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/MisCuentas.Infrastructure.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/Debug/net8.0/ref/MisCuentas.Infrastructure.dll

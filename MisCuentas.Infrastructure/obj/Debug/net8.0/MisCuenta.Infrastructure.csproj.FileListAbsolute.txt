@@ -1,0 +1,16 @@
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.csproj.AssemblyReference.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.AssemblyInfoInputs.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.AssemblyInfo.cs
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.csproj.CoreCompileInputs.cache
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.sourcelink.json
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/bin/Debug/net8.0/MisCuenta.Infrastructure.deps.json
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/bin/Debug/net8.0/MisCuenta.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/bin/Debug/net8.0/MisCuenta.Infrastructure.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/bin/Debug/net8.0/MisCuentas.Domain.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuent.36D5D58A.Up2Date
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/refint/MisCuenta.Infrastructure.dll
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/MisCuenta.Infrastructure.pdb
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuenta.Infrastructure/obj/Debug/net8.0/ref/MisCuenta.Infrastructure.dll
