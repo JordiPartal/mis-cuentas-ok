@@ -50,13 +50,13 @@ Exporta a **CSV** la rentabilidad de la cuenta corriente para cada mes. Incluye 
 ## Salir
 Sale de la aplicación.
 
-## PARAMETROS ACEPTADOS
-# Parametro (-e)
+# PARAMETROS ACEPTADOS
+## Parametro (-e)
 La aplicación acepta dos parametros `-e` y `-n`. El primer parámetor (-e) permite al usuario exportar la información que aparece en pantalla a un fichero **CSV**. Ejemplo: `Ingrese una opcion: 3 -e`.
 
 ![exportar](imagen/exportar.png)
 
-# Parametro (-n [nombre fichero])
+## Parametro (-n [nombre fichero])
 El segundo parámetro (-n) permite al usuario exportar la información que aparece en pantalla a un **CSV** y definir el nombre del fichero exportado. Ejemplo: `Ingrese una opción: 5 -n movimientos_marzo`.
 
 ![nombrar](imagen/nombrar.png)
