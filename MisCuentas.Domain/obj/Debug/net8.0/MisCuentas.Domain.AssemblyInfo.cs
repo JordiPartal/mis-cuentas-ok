@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisCuentas.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a37edc9ac614e6ed2025a71f0f3fdd34f460c5ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f08a69657bb05ed8785d8bed2548345f978aa986")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisCuentas.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisCuentas.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,33 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MisCuentas.Web
 build_property.RootNamespace = MisCuentas.Web
-build_property.ProjectDir = /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/
+build_property.ProjectDir = /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web
+build_property.MSBuildProjectDirectory = /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/Components/App.razor]
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/Components/Pages/Cabecera.razor]
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Cabecera.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYWJlY2VyYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/Components/Routes.razor]
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/Components/_Imports.razor]
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor]
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGFudGFsbGFQcmluY2lwYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rcgk2zprur

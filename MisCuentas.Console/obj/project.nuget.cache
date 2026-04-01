@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jpvqZmtV1zc=",
+  "dgSpecHash": "tIsMats3INuYCTGi/4yQYJWKsdLnkrwc8oxVyz7VdOX0PNnJFsGVXaGgn+lBk3p5sOgz2BmJt47sxIIhxrjTBw==",
   "success": true,
-  "projectFilePath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj",
+  "projectFilePath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/MisCuentas.Console.csproj",
   "expectedPackageFiles": [
     "/home/studio/.nuget/packages/bouncycastle.cryptography/2.6.2/bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "/home/studio/.nuget/packages/csvexport/2.2.0/csvexport.2.2.0.nupkg.sha512",

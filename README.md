@@ -14,6 +14,7 @@ El menú dispone de 5 funciones básicas, que pueden seleccionarse introduciendo
 - (3) Sumatorio
 - (4) Balance
 - (5) Obtener Movimientos
+- (6) Rentabilidad
 - (0) Salir
 
 ## Obtener Transacciones
@@ -40,6 +41,11 @@ Permite obtener un resumen de los ingresos y gastos durante todo el año o filtr
 Exporta a **CSV** los movimientos contables registrados durante un período de tiempo determinado, aplicando los conceptos de **debe** y **haber**, y generando un fichero preparado para su tratamiento en **Excel** o **LibreOffice Calc**.
 
 ![contabilidad](imagen/contabilidad.png)
+
+## Rentabilidad
+Exporta a **CSV** la rentabilidad de la cuenta corriente para cada mes. Incluye la siguiente información: **año**, **mes**, **fecha**, **ingresos y gastos**, el **margen** (tanto en valor decimal como en porcentaje), el **saldo** y su correspondiente **rentabilidad**.
+
+![rentabilidad](imagen/rentabilidad.png)
 
 ## Salir
 Sale de la aplicación.

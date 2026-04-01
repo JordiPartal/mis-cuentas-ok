@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {}
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {}
   },
   "projects": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj",
         "projectName": "MisCuentas.Domain",
-        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj",
         "packagesPath": "/home/studio/.nuget/packages/",
-        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/obj/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/studio/.nuget/NuGet/NuGet.Config"

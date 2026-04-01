@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/MisCuentas.Web.csproj",
+      "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/MisCuentas.Web.csproj",
       "projectName": "MisCuentas.Web",
-      "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/MisCuentas.Web.csproj",
+      "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/MisCuentas.Web.csproj",
       "packagesPath": "/home/studio/.nuget/packages/",
-      "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web/obj/",
+      "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/studio/.nuget/NuGet/NuGet.Config"

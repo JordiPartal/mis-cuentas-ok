@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj": {}
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/MisCuentas.Console.csproj": {}
   },
   "projects": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/MisCuentas.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj",
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/MisCuentas.Console.csproj",
         "projectName": "MisCuentas.Console",
-        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/MisCuentas.Console.csproj",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/MisCuentas.Console.csproj",
         "packagesPath": "/home/studio/.nuget/packages/",
-        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Console/obj/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Console/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/studio/.nuget/NuGet/NuGet.Config"
@@ -20,18 +20,17 @@
           "net8.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
-                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj"
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj"
               },
-              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
-                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj"
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj"
               }
             }
           }
@@ -40,13 +39,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -73,18 +66,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj",
         "projectName": "MisCuentas.Domain",
-        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj",
         "packagesPath": "/home/studio/.nuget/packages/",
-        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/obj/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/studio/.nuget/NuGet/NuGet.Config"
@@ -93,7 +86,6 @@
           "net8.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,13 +98,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -133,18 +119,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
         "projectName": "MisCuentas.Infrastructure",
-        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/MisCuentas.Infrastructure.csproj",
         "packagesPath": "/home/studio/.nuget/packages/",
-        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Infrastructure/obj/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/studio/.nuget/NuGet/NuGet.Config"
@@ -153,15 +139,14 @@
           "net8.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj": {
-                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Domain/MisCuentas.Domain.csproj"
+              "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {
+                "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj"
               }
             }
           }
@@ -170,13 +155,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -219,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
