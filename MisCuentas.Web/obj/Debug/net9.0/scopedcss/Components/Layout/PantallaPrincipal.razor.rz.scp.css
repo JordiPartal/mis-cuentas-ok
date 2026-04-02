@@ -1,7 +1,9 @@
-#_resume[b-rcgk2zprur] {
+div[b-rcgk2zprur] {
     width: 90%;
     margin: 32px auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-gap: 64px;
+}
+
+div:nth-child(2)[b-rcgk2zprur] {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 32px;
 }

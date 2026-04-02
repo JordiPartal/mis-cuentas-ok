@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisCuentas.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cb2b0fffed19e6eee31ab09a1ad8340bc8b6ec7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7253ed1d7949363a5578cc6638aae9325633770d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisCuentas.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisCuentas.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

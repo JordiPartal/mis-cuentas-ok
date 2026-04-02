@@ -1,0 +1,24 @@
+h1 , h2 {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div > h2:first-child {
+    font-weight: 300;
+    strong { font-weight: 400; } 
+}
+
+div > h2:nth-child(2) {
+    text-align: right;
+    strong { border-bottom: 2px solid black; }
+}

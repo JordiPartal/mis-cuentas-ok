@@ -1,43 +1,77 @@
 /* _content/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor.rz.scp.css */
-#_resume[b-rcgk2zprur] {
+div[b-rcgk2zprur] {
     width: 90%;
     margin: 32px auto;
+}
+
+div:nth-child(2)[b-rcgk2zprur] {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 32px;
+}
+/* _content/MisCuentas.Web/Components/Pages/Cabecera.razor.rz.scp.css */
+h1[b-296fdb2uvb] , h2[b-296fdb2uvb] {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 400;
+}
+
+h1[b-296fdb2uvb] {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+div[b-296fdb2uvb] {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-gap: 64px;
+    grid-template-columns: repeat(2, 1fr);
 }
-/* _content/MisCuentas.Web/Components/Pages/Resume.razor.rz.scp.css */
-._container[b-d0qm61p55s] {
-    height: 250px;
-    background-color: aliceblue;
-    border: 1px solid darkgray;
-    border-radius: 0 128px 0 0;
+
+div > h2:first-child[b-296fdb2uvb] {
+    font-weight: 300;
+    strong { font-weight: 400; } 
+}
+
+div > h2:nth-child(2)[b-296fdb2uvb] {
+    text-align: right;
+    strong { border-bottom: 2px solid black; }
+}
+/* _content/MisCuentas.Web/Components/Pages/Resumen.razor.rz.scp.css */
+div[b-6uc9xpijm6] {
+    font-family: 'Anybody', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+._container[b-6uc9xpijm6] {
+    height: 128px;
     display: flex;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
+    flex-direction: column;
+    margin: 32px auto;
+}
+
+._container > h1[b-6uc9xpijm6], h2[b-6uc9xpijm6] {
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    flex: 1;
+    display: flex;
     align-items: center;
-}
-
-._container > div[b-d0qm61p55s] {
-    display: inline-table;
     justify-content: center;
-    align-items: center;
 }
 
-._container > div > h1[b-d0qm61p55s] {
-    color: steelblue;
-    font-family: "Anybody", sans-serif;
-    font-weight: 400;
-    font-size: 4rem;
-    text-align: center;  
-    margin: 4px auto 24px auto;
+._container:first-child > h1[b-6uc9xpijm6] {
+    color: forestgreen;
+} 
+
+._container:nth-child(2) > h1[b-6uc9xpijm6] {
+    color: orangered;
 }
 
-._container > div > h2[b-d0qm61p55s] {
-    color: darkslategray;
-    font-family: "Anybody", sans-serif;
-    font-weight: 400;
+._container:nth-child(3) > h1[b-6uc9xpijm6], 
+._container:nth-child(4) > h1[b-6uc9xpijm6] {
+    color: dimgray;
+}
+
+._container > h2[b-6uc9xpijm6] {
+    font-weight: 300;
     font-size: 1.5rem;
-    text-align: center;
-    margin: 4px auto;
 }

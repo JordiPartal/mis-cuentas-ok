@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGFudGFsbGFQcmluY2lwYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rcgk2zprur
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Resume.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXN1bWUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-d0qm61p55s
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Cabecera.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYWJlY2VyYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-296fdb2uvb
+
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Resumen.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXN1bWVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-6uc9xpijm6

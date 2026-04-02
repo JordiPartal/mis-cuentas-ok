@@ -1,0 +1,24 @@
+h1[b-296fdb2uvb] , h2[b-296fdb2uvb] {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 400;
+}
+
+h1[b-296fdb2uvb] {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+div[b-296fdb2uvb] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div > h2:first-child[b-296fdb2uvb] {
+    font-weight: 300;
+    strong { font-weight: 400; } 
+}
+
+div > h2:nth-child(2)[b-296fdb2uvb] {
+    text-align: right;
+    strong { border-bottom: 2px solid black; }
+}

@@ -1,0 +1,41 @@
+div {
+    font-family: 'Anybody', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+._container {
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+}
+
+._container > h1, h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._container:first-child > h1 {
+    color: forestgreen;
+} 
+
+._container:nth-child(2) > h1 {
+    color: orangered;
+}
+
+._container:nth-child(3) > h1, 
+._container:nth-child(4) > h1 {
+    color: dimgray;
+}
+
+._container > h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
