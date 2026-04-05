@@ -5,9 +5,9 @@ namespace MisCuentas.Infrastructure.Tmp.Controller;
 
 public class BalanceController
 {
-    private readonly IBalanceService _BalanceService;
+    private readonly IBalanceRepository _BalanceService;
     
-    public BalanceController(IBalanceService BalanceService)
+    public BalanceController(IBalanceRepository BalanceService)
     {
         _BalanceService = BalanceService;
     }

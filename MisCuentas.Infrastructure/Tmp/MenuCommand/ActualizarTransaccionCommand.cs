@@ -25,6 +25,9 @@ public class InsertaTransaccionCommand : IMenuCommand
         ImpresoraDeConsola.Imprimirtipo();
         transaccion.idtipo = Validacion.Validartipo();
         
+        ImpresoraDeConsola.ImprimirImpuesto();
+        transaccion.idImpuesto = Validacion.ValidarImpuesto();
+        
         _transaccionService.AgregarTransaccion(transaccion);
     }
 }

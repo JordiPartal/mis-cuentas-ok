@@ -6,10 +6,10 @@ namespace MisCuentas.Infrastructure.Tmp.MenuCommand;
 
 public class BalanceCommand : IMenuCommand
 {
-    private readonly IBalanceService _BalanceService;
+    private readonly IBalanceRepository _BalanceService;
     public string Nombre => "Balance";
     
-    public BalanceCommand(IBalanceService BalanceService)
+    public BalanceCommand(IBalanceRepository BalanceService)
     {
         _BalanceService = BalanceService;
     }

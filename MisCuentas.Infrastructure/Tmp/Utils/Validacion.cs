@@ -101,4 +101,18 @@ public class Validacion
             _          => (int)tipoTransaccion.Simple
         };
     }
+
+    public static int ValidarImpuesto()
+    {
+        Console.Write("Tipo de impuesto: ");
+        int entrada = int.Parse(Console.ReadLine() ?? string.Empty);
+
+        return entrada switch
+        {
+            4 => (int)tipoImpuesto.IVA4,
+            10 => (int)tipoImpuesto.IVA10,
+            21 => (int)tipoImpuesto.IVA21,
+            15 => (int)tipoImpuesto.IRPF15
+        };
+    }
 }

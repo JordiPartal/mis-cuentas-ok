@@ -12,11 +12,12 @@ public static class DependencyInjection
     {
         // servicios
         services.AddTransient<ITransaccionService, TransaccionServices>();
-        services.AddTransient<ISumatorioService, SumatorioServices>();
-        services.AddTransient<IBalanceService, BalanceService>();
+        services.AddTransient<ISumatorioRepository, SumatorioRepository>();
+        services.AddTransient<IBalanceRepository, BalanceRepository>();
         services.AddTransient<IMovimientoService, MovimientoService>();
         services.AddTransient<IRentabilidadService, RentabilidadService>();
-        
+        services.AddTransient<IGestorDeErroresService, GestorDeErroresService>();
+            
         // commands
         services.AddTransient<IMenuCommand, TransaccionCommand>();
         services.AddTransient<IMenuCommand, InsertaTransaccionCommand>();

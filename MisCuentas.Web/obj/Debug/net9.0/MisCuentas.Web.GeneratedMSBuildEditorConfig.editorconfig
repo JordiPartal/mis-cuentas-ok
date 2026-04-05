@@ -36,10 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGFudGFsbGFQcmluY2lwYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rcgk2zprur
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Cabecera.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYWJlY2VyYS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-296fdb2uvb
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/KPIs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9LUElzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ezd7bkfdm0
 
-[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Resumen.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXN1bWVuLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-6uc9xpijm6
+[/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/Components/Pages/Opciones.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGNpb25lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-58of4nal9l

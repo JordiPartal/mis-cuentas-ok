@@ -46,8 +46,8 @@ public class ImpresoraDeConsola
         {
             if (lista.Count == 0) throw new Exception();
             
-            string[] cabecera = { Tamano("cargo", 23), Tamano("tipo", 23), Tamano("concepto", 23), Tamano("cantidad", 0) };
-            string[] separado = { new string('*', 23), new string('*', 23), new string('*', 23), new string('*', 24) };
+            string[] cabecera = { Tamano("cargo", 23), Tamano("tipo", 23), Tamano("concepto", 23), Tamano("sin impuesto", 23), Tamano("iva/irpf", 23), Tamano("total", 0) };
+            string[] separado = { new string('*', 23), new string('*', 23), new string('*', 23), new string('*', 23), new string('*', 23), new string('*', 24) };
 
             Console.WriteLine(string.Join("|", cabecera));
             Console.WriteLine(string.Join("|", separado));
@@ -57,9 +57,11 @@ public class ImpresoraDeConsola
                 string fecha = item.fechaCargo.ToString("ddd, dd \\de MMM yyyy").PadRight(23, ' ');
                 string tipo = item.tipo.PadRight(23, ' ');
                 string concepto = item.concepto.PadRight(23, ' ');
+                string _base = item._base.ToString("C").PadLeft(23, ' ');
+                string cuota = item.cuota.ToString("C").PadLeft(23, ' ');
                 string cantidad = item.cantidad.ToString("C").PadLeft(24, ' ');
 
-                Console.WriteLine($"{fecha}|{tipo}|{concepto}|{cantidad}");
+                Console.WriteLine($"{string.Join("|", fecha, tipo, concepto, _base, cuota, cantidad)}");
             }
         }
         catch (Exception)
@@ -150,6 +152,22 @@ public class ImpresoraDeConsola
         Console.WriteLine("> Ingreso");
         Console.WriteLine();
         Console.WriteLine("* En caso de no encontrar el tipo, se asignará SIMPLE *");
+        Console.WriteLine();
+    }
+
+    /// <summary>
+    /// Imprime en la consola una lista de tipos de impuestos disponibles, cada uno asociado a su porcentaje,
+    /// e indica que el 21% será asignado por defecto si no se especifica un tipo válido.
+    /// </summary>
+    public static void ImprimirImpuesto()
+    {
+        Console.WriteLine();
+        Console.WriteLine("> IVA 4% -> 4");
+        Console.WriteLine("> IVA 10% -> 10");
+        Console.WriteLine("> IVA 21% -> 21");
+        Console.WriteLine("> IRPF 15% -> 15");
+        Console.WriteLine();
+        Console.WriteLine("* En caso de no encontrar el tipo, se asignará 21 *");
         Console.WriteLine();
     }
 }

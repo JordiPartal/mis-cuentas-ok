@@ -1,9 +1,37 @@
-div[b-rcgk2zprur] {
-    width: 90%;
-    margin: 32px auto;
+._pagina[b-rcgk2zprur] {
+    width: 95%;
+    height: calc(100vh - 16px);
+    margin: auto;
+    font-family: 'Anybody', sans-serif;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 256px repeat(2, 1fr);
+    grid-template-areas:
+    "mes vacio vacio vacio"
+    "grafica grafica resumen resumen"
+    "grafica grafica resumen resumen";
 }
 
-div:nth-child(2)[b-rcgk2zprur] {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 32px;
+._box[b-rcgk2zprur] {
+    border: 1px solid lightgrey;    
+}
+
+._box:nth-child(1)[b-rcgk2zprur] {
+    grid-area: mes;
+    background: whitesmoke;
+}
+
+._box:nth-child(2)[b-rcgk2zprur] {
+    grid-area: vacio;
+}
+
+._box:nth-child(3)[b-rcgk2zprur] {
+    grid-area: grafica;
+    background-color: aliceblue;
+}
+
+._box:nth-child(4)[b-rcgk2zprur] {
+    grid-area: resumen;
+    border: none;
 }

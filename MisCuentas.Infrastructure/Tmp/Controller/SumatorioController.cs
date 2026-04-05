@@ -5,9 +5,9 @@ namespace MisCuentas.Infrastructure.Tmp.Controller;
 
 public class SumatorioController
 {
-    private readonly ISumatorioService _sumatorioService;
+    private readonly ISumatorioRepository _sumatorioService;
     
-    public SumatorioController(ISumatorioService sumatorioService)
+    public SumatorioController(ISumatorioRepository sumatorioService)
     {
         _sumatorioService = sumatorioService;
     }

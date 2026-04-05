@@ -17,15 +17,15 @@
           "/home/studio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -39,11 +39,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.115/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -77,15 +83,15 @@
           "/home/studio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
               "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj": {
                 "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Domain/MisCuentas.Domain.csproj"
@@ -103,11 +109,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "CsvExport": {
               "target": "Package",
@@ -146,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.115/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -166,7 +172,7 @@
           "net9.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -192,7 +198,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -216,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.115/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -36,10 +36,12 @@ public class TransaccionServices : ITransaccionService
         {
             transacciones.Add(new Transaccion
             {
-                fechaCargo = reader.IsDBNull(0) ? DateTime.MinValue : reader.GetDateTime(0),
-                concepto = reader.IsDBNull(1) ? "N/D" : reader.GetString(1),
-                cantidad = reader.IsDBNull(2) ? 0 : Convert.ToDecimal(reader.GetValue(2)),
-                tipo = reader.IsDBNull(3) ? "N/D" : reader.GetString(3),
+                fechaCargo = reader.IsDBNull(0) ? DateTime.Now : reader.GetDateTime(0),
+                tipo = reader.IsDBNull(1) ? "N/D" : reader.GetString(1),
+                concepto = reader.IsDBNull(2) ? "N/D" : reader.GetString(2),
+                _base = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3)),
+                cuota = reader.IsDBNull(4) ? 0 :Convert.ToDecimal(reader.GetValue(4)),
+                cantidad = reader.IsDBNull(5) ? 0 : Convert.ToDecimal(reader.GetValue(5))
             });
         }
         
@@ -66,6 +68,7 @@ public class TransaccionServices : ITransaccionService
         cmd.Parameters.AddWithValue("@concepto", transaccion.concepto);
         cmd.Parameters.AddWithValue("@cantidad", transaccion.cantidad);
         cmd.Parameters.AddWithValue("@categoria", transaccion.idtipo);
+        cmd.Parameters.AddWithValue("@impuesto", transaccion.idImpuesto);
         
         cmd.ExecuteNonQuery();
         
@@ -88,7 +91,9 @@ public class TransaccionServices : ITransaccionService
             data["cargo"] = transaccion.fechaCargo;
             data["tipo"] = transaccion.tipo;
             data["concepto"] = transaccion.concepto;
-            data["cantidad"] = transaccion.cantidad;
+            data["sin impuesto"] = transaccion._base;
+            data["iva/irpf"] = transaccion.cuota;
+            data["total"] = transaccion.cantidad;
         }
         
         if (!Directory.Exists(carpeta)) Directory.CreateDirectory(carpeta);

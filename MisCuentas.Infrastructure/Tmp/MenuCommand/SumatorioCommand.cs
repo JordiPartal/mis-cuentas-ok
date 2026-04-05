@@ -6,10 +6,10 @@ namespace MisCuentas.Infrastructure.Tmp.MenuCommand;
 
 public class SumatorioCommand : IMenuCommand
 {
-    private readonly ISumatorioService _sumatorioService;
+    private readonly ISumatorioRepository _sumatorioService;
     public string Nombre => "Sumatorio";
     
-    public SumatorioCommand(ISumatorioService sumatorioService)
+    public SumatorioCommand(ISumatorioRepository sumatorioService)
     {
         _sumatorioService = sumatorioService;
     }
