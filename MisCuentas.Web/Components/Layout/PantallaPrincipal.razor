@@ -2,15 +2,16 @@
 @using MisCuentas.Web.Components.Pages
 @inherits LayoutComponentBase
 
-<div class="_pagina">
-    <div class = "_box" />
-    <div class = "_box" />
-    <div class = "_box" />
-    <div class="_box">
-        <KPIs />
+<div id = "grid-container">
+    <div class = "espacio"/>
+    <div class = "espacio">
+        <Lateral />    
+    </div> 
+    <div class = "espacio" />
+    <div class = "espacio">
+        <Resumen />
     </div>
 </div>
-
 
 @code
 {

@@ -9,5 +9,5 @@ public class Transaccion
     public decimal cuota { get; set; }
     public decimal cantidad { get; set; }
     public int idtipo { get; set; }
-    public int idImpuesto { get; set; }
+    public int? idImpuesto { get; set; }
 }

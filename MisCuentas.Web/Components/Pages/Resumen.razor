@@ -1,0 +1,36 @@
+@using MisCuentas.Domain.Interface
+@using MisCuentas.Domain.Models
+
+<div id = "flex-container">
+    <div class="flex-box">
+        <h1>@_balance.ingresos.ToString("C")</h1>
+        <h2>Ingresos (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
+    </div>
+    <div class="flex-box">
+        <h1>@_balance.gastos.ToString("C")</h1>
+        <h2>Gastos (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
+    </div>
+    <div class="flex-box">
+        <h1>@_balance.ahorro.ToString("C")</h1>
+        <h2>Margen (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
+    </div>
+    <div class="flex-box">
+        <h1>@_balance.ganancia.ToString() %</h1>
+        <h2>Margen (%) (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
+    </div>
+</div>
+
+@code {
+    
+    [Inject] protected IBalanceRepository _balanceRepository { get; set; } = default!;
+    
+    private int mesEnCurso = DateTime.Now.Month;
+    private int anoEnCurso = DateTime.Now.Year;
+    private Balance _balance = new();
+
+    protected override void OnInitialized()
+    {
+        _balance = _balanceRepository.Balance(mesEnCurso, anoEnCurso);
+    }
+    
+}

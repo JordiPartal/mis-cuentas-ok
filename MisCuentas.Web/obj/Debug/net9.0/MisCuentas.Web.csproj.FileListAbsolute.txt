@@ -53,11 +53,8 @@
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.MvcApplicationPartsAssemblyInfo.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.sourcelink.json
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Layout/PantallaPrincipal.razor.rz.scp.css
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/KPIs.razor.rz.scp.css
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Opciones.razor.rz.scp.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/y6p606biep-5ipweew5fc.gz
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/tsxn09x806-bqjiyaj88i.gz
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/n6j8kl4g12-c2jlpeoesf.gz
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/bnih0bg7od-erw9l3u2r3.gz
@@ -117,5 +114,8 @@
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.pdb
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.genruntimeconfig.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/ref/MisCuentas.Web.dll
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-msrq0rb2s6.gz
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-msrq0rb2s6.gz
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/y6p606biep-5ipweew5fc.gz
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Resumen.razor.rz.scp.css
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Lateral.razor.rz.scp.css
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz

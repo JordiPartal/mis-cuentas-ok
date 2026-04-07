@@ -1,0 +1,41 @@
+#flex-container {
+    font-family: 'Anybody', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.flex-box {
+    flex-grow: 1;
+    box-shadow: 0 0 8px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-box > h1, h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 8px;
+}
+
+.flex-box > h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.flex-box:first-child > h1 {
+    color: green;
+}
+
+.flex-box:nth-child(2) > h1 {
+    color: red;
+}
+
+.flex-box:last-child > h1 {
+    color: slateblue;
+}

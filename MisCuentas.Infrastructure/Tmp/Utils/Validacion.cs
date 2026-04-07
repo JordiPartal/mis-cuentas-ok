@@ -109,10 +109,12 @@ public class Validacion
 
         return entrada switch
         {
+            0 => (int)tipoImpuesto.SIN,
             4 => (int)tipoImpuesto.IVA4,
             10 => (int)tipoImpuesto.IVA10,
             21 => (int)tipoImpuesto.IVA21,
-            15 => (int)tipoImpuesto.IRPF15
+            15 => (int)tipoImpuesto.IRPF15,
+            _ => (int)tipoImpuesto.SIN
         };
     }
 }

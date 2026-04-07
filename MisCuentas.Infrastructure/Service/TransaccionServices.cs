@@ -68,7 +68,7 @@ public class TransaccionServices : ITransaccionService
         cmd.Parameters.AddWithValue("@concepto", transaccion.concepto);
         cmd.Parameters.AddWithValue("@cantidad", transaccion.cantidad);
         cmd.Parameters.AddWithValue("@categoria", transaccion.idtipo);
-        cmd.Parameters.AddWithValue("@impuesto", transaccion.idImpuesto);
+        cmd.Parameters.AddWithValue("@impuesto", transaccion.idImpuesto).Value = transaccion.idImpuesto == 0 ? DBNull.Value : transaccion.idImpuesto;
         
         cmd.ExecuteNonQuery();
         

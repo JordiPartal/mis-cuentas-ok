@@ -12,6 +12,7 @@ public enum tipoTransaccion
 
 public enum tipoImpuesto
 {
+    SIN = 0,
     IVA4 = 1,
     IVA10 = 2,
     IVA21 = 3,

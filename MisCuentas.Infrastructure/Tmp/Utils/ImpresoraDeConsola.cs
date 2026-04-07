@@ -162,12 +162,13 @@ public class ImpresoraDeConsola
     public static void ImprimirImpuesto()
     {
         Console.WriteLine();
+        Console.WriteLine("> SIN IVA -> 0");
         Console.WriteLine("> IVA 4% -> 4");
         Console.WriteLine("> IVA 10% -> 10");
         Console.WriteLine("> IVA 21% -> 21");
         Console.WriteLine("> IRPF 15% -> 15");
         Console.WriteLine();
-        Console.WriteLine("* En caso de no encontrar el tipo, se asignará 21 *");
+        Console.WriteLine("* En caso no haber impuesto se aplicará el 0% *");
         Console.WriteLine();
     }
 }
