@@ -52,7 +52,6 @@
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.csproj.CoreCompileInputs.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.MvcApplicationPartsAssemblyInfo.cache
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/MisCuentas.Web.sourcelink.json
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Layout/PantallaPrincipal.razor.rz.scp.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/tsxn09x806-bqjiyaj88i.gz
@@ -117,5 +116,7 @@
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/y6p606biep-5ipweew5fc.gz
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Resumen.razor.rz.scp.css
 /home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Lateral.razor.rz.scp.css
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz
-/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Cabecera.razor.rz.scp.css
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/Components/Pages/Indice.razor.rz.scp.css
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz
+/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz

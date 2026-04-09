@@ -2,6 +2,7 @@
 using MisCuentas.Infrastructure.Tmp.Controller;
 using MisCuentas.Infrastructure.Tmp.MenuCommand;
 using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Models;
 using MisCuentas.Infrastructure.Service;
 
 namespace MisCuentas.Infrastructure;
@@ -17,6 +18,7 @@ public static class DependencyInjection
         services.AddTransient<IMovimientoService, MovimientoService>();
         services.AddTransient<IRentabilidadService, RentabilidadService>();
         services.AddTransient<IGestorDeErroresService, GestorDeErroresService>();
+        services.AddScoped<EstadoFecha>();
             
         // commands
         services.AddTransient<IMenuCommand, TransaccionCommand>();

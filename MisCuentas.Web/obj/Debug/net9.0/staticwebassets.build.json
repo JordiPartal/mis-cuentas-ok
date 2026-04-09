@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O/l+gNyXZFiyB7W8KhCv2Ut14xtbeak5pRbe0O1KCw8=",
+  "Hash": "Hn4sl7J+vQH3LT7iCYls0dnssWFqUlPTDJIqu7NmVS4=",
   "Source": "MisCuentas.Web",
   "BasePath": "_content/MisCuentas.Web",
   "Mode": "Default",
@@ -563,12 +563,12 @@
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz",
+      "Identity": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz",
       "SourceId": "MisCuentas.Web",
       "SourceType": "Computed",
       "ContentRoot": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MisCuentas.Web",
-      "RelativePath": "MisCuentas.Web#[.{fingerprint=psxer0rvk2}]?.styles.css.gz",
+      "RelativePath": "MisCuentas.Web#[.{fingerprint=s6mkyinmms}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -577,8 +577,8 @@
       "RelatedAsset": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e7az3cbdq5",
-      "Integrity": "aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=",
+      "Fingerprint": "tcljms4mwo",
+      "Integrity": "I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css"
@@ -605,12 +605,12 @@
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz",
+      "Identity": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz",
       "SourceId": "MisCuentas.Web",
       "SourceType": "Computed",
       "ContentRoot": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MisCuentas.Web",
-      "RelativePath": "MisCuentas.Web#[.{fingerprint=psxer0rvk2}]!.bundle.scp.css.gz",
+      "RelativePath": "MisCuentas.Web#[.{fingerprint=s6mkyinmms}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -619,8 +619,8 @@
       "RelatedAsset": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e7az3cbdq5",
-      "Integrity": "aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=",
+      "Fingerprint": "tcljms4mwo",
+      "Integrity": "I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css"
@@ -1018,8 +1018,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "psxer0rvk2",
-      "Integrity": "Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=",
+      "Fingerprint": "s6mkyinmms",
+      "Integrity": "VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css"
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "psxer0rvk2",
-      "Integrity": "Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=",
+      "Fingerprint": "s6mkyinmms",
+      "Integrity": "VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css"
@@ -15919,12 +15919,12 @@
     },
     {
       "Route": "MisCuentas.Web.bundle.scp.css",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001322751323"
+          "Quality": "0.001063829787"
         }
       ],
       "ResponseHeaders": [
@@ -15934,15 +15934,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15962,13 +15962,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "W/\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
@@ -15983,7 +15983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2522"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -15991,11 +15991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16005,13 +16005,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
       "Route": "MisCuentas.Web.bundle.scp.css.gz",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16020,7 +16020,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "Content-Type",
@@ -16028,11 +16028,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16050,18 +16050,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto="
+          "Value": "sha256-I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.bundle.scp.css",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz",
+      "Route": "MisCuentas.Web.s6mkyinmms.bundle.scp.css",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001322751323"
+          "Quality": "0.001063829787"
         }
       ],
       "ResponseHeaders": [
@@ -16071,15 +16071,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16099,13 +16099,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "W/\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16113,12 +16113,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.bundle.scp.css",
+      "Route": "MisCuentas.Web.s6mkyinmms.bundle.scp.css",
       "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/projectbundle/MisCuentas.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16128,7 +16128,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2522"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -16136,11 +16136,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16150,7 +16150,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16158,13 +16158,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.bundle.scp.css.gz",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-psxer0rvk2.gz",
+      "Route": "MisCuentas.Web.s6mkyinmms.bundle.scp.css.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/nxsiud9l8b-s6mkyinmms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16173,7 +16173,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "Content-Type",
@@ -16181,11 +16181,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16203,7 +16203,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16211,18 +16211,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto="
+          "Value": "sha256-I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.styles.css",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz",
+      "Route": "MisCuentas.Web.s6mkyinmms.styles.css",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001322751323"
+          "Quality": "0.001063829787"
         }
       ],
       "ResponseHeaders": [
@@ -16232,15 +16232,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16260,13 +16260,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "W/\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16274,12 +16274,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.styles.css",
+      "Route": "MisCuentas.Web.s6mkyinmms.styles.css",
       "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/scopedcss/bundle/MisCuentas.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16289,7 +16289,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2522"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -16297,11 +16297,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16311,7 +16311,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16319,13 +16319,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
-      "Route": "MisCuentas.Web.psxer0rvk2.styles.css.gz",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz",
+      "Route": "MisCuentas.Web.s6mkyinmms.styles.css.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16334,7 +16334,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "Content-Type",
@@ -16342,11 +16342,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16364,7 +16364,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "psxer0rvk2"
+          "Value": "s6mkyinmms"
         },
         {
           "Name": "label",
@@ -16372,18 +16372,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto="
+          "Value": "sha256-I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ="
         }
       ]
     },
     {
       "Route": "MisCuentas.Web.styles.css",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001322751323"
+          "Quality": "0.001063829787"
         }
       ],
       "ResponseHeaders": [
@@ -16393,15 +16393,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16421,13 +16421,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "W/\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
@@ -16442,7 +16442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2522"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -16450,11 +16450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM=\""
+          "Value": "\"VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16464,13 +16464,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z/K0NaSMLBXE7NMf+xiKpBlC2TMHCx7hAg5vc9QAODM="
+          "Value": "sha256-VIcfwSPV3r9q9SAP8XMrRF1YNIXG4j7s+MQnyDeQ09Q="
         }
       ]
     },
     {
       "Route": "MisCuentas.Web.styles.css.gz",
-      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-psxer0rvk2.gz",
+      "AssetFile": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web/obj/Debug/net9.0/compressed/lmk4r3xi0v-s6mkyinmms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16479,7 +16479,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "755"
+          "Value": "939"
         },
         {
           "Name": "Content-Type",
@@ -16487,11 +16487,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto=\""
+          "Value": "\"I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Apr 2026 21:27:37 GMT"
+          "Value": "Thu, 09 Apr 2026 21:16:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16509,7 +16509,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aqGiMKDR3vVgoX9vCkpfc3//WXGsD2CKOpGtgkPJvto="
+          "Value": "sha256-I4fOPVlzbpPoiqZbxQIki/IJb5c8YiXII/7GExXoIOQ="
         }
       ]
     }

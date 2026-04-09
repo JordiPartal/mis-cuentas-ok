@@ -1,36 +1,62 @@
+@implements IDisposable
+@inject EstadoFecha _estadoFecha
+@inject IBalanceRepository _balanceRepository
+@using System.Globalization
 @using MisCuentas.Domain.Interface
 @using MisCuentas.Domain.Models
 
-<div id = "flex-container">
-    <div class="flex-box">
-        <h1>@_balance.ingresos.ToString("C")</h1>
-        <h2>Ingresos (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
+@if (_balance == null || string.IsNullOrEmpty(_mesTexto))
+{
+    <p>Cargando Resumen mensual...</p>
+}
+else
+{
+    <div id = "flex-container">
+        <div class="flex-box">
+            <h1>@_balance.ingresos.ToString("C")</h1>
+            <h2>Ingresos (@_mesTexto)</h2>
+        </div>
+        <div class="flex-box">
+            <h1>@_balance.gastos.ToString("C")</h1>
+            <h2>Gastos (@_mesTexto)</h2>
+        </div>
+        <div class="flex-box">
+            <h1>@_balance.ahorro.ToString("C")</h1>
+            <h2>Margen (@_mesTexto)</h2>
+        </div>
+        <div class="flex-box">
+            <h1>@_balance.ganancia.ToString() %</h1>
+            <h2>Margen (%) (@_mesTexto)</h2>
+        </div>
     </div>
-    <div class="flex-box">
-        <h1>@_balance.gastos.ToString("C")</h1>
-        <h2>Gastos (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
-    </div>
-    <div class="flex-box">
-        <h1>@_balance.ahorro.ToString("C")</h1>
-        <h2>Margen (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
-    </div>
-    <div class="flex-box">
-        <h1>@_balance.ganancia.ToString() %</h1>
-        <h2>Margen (%) (@DateTime.Now.ToString("MMMM").ToUpper())</h2>
-    </div>
-</div>
+}
 
 @code {
-    
-    [Inject] protected IBalanceRepository _balanceRepository { get; set; } = default!;
-    
-    private int mesEnCurso = DateTime.Now.Month;
-    private int anoEnCurso = DateTime.Now.Year;
-    private Balance _balance = new();
+
+    int mes, ano;
+    private string? _mesTexto;
+    private Balance? _balance;
 
     protected override void OnInitialized()
     {
-        _balance = _balanceRepository.Balance(mesEnCurso, anoEnCurso);
+        _estadoFecha.AlCambiarEstado += RecargarDatos;
+        RecargarDatos();
     }
-    
+
+    private void RecargarDatos()
+    {
+        mes = _estadoFecha.Mes;
+        ano = _estadoFecha.Anio;
+        _mesTexto = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mes).ToUpper();
+
+        _balance = _balanceRepository.Balance(mes, ano);
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        _estadoFecha.AlCambiarEstado -= RecargarDatos;
+    }
+
 }

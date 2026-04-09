@@ -1,0 +1,57 @@
+.flex-container {
+    font-family: 'Anybody', sans-serif;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.flex-box {
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+}
+
+.flex-box:nth-child(3), .flex-box:nth-child(4) {
+    width: 10%;
+}
+
+.flex-box > label {
+    font-family: inherit;
+    padding: 8px;
+}
+
+.flex-box > .filtro {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    border: 1px darkslateblue solid;
+    border-radius: 0;
+}
+
+.flex-box > #filtrar {
+    width: 100%;
+    font-family: inherit;
+    font-weight: 500;
+    background-color: white;
+    padding: 8px;
+    display: block;
+    grid-column: 1 / span 2;
+    border: 1px darkslateblue solid;
+}
+
+.flex-box > #filtrar:hover {
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.flex-box > p {;
+    margin: 0;
+    padding: 8px;
+}

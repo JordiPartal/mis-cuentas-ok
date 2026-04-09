@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj": {}
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj": {}
   },
   "projects": {
-    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj": {
+    "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj",
+        "projectUniqueName": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj",
         "projectName": "MisCuentas.Web.Prueba",
-        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj",
+        "projectPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web.Prueba/MisCuentas.Web.Prueba.csproj",
         "packagesPath": "/home/studio/.nuget/packages/",
-        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas/MisCuentas.Web.Prueba/obj/",
+        "outputPath": "/home/studio/Escritorio/desarrollo/Proyectos/mis-cuentas-ok/MisCuentas.Web.Prueba/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/studio/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,7 @@
           "net9.0"
         ],
         "sources": {
-          "/home/studio/.dotnet/library-packs": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/studio/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.115/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

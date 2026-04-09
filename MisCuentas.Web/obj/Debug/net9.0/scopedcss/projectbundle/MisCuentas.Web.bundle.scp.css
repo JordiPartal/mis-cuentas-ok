@@ -1,5 +1,63 @@
-/* _content/MisCuentas.Web/Components/Layout/PantallaPrincipal.razor.rz.scp.css */
-#grid-container[b-rcgk2zprur]{
+/* _content/MisCuentas.Web/Components/Pages/Cabecera.razor.rz.scp.css */
+.flex-container[b-296fdb2uvb] {
+    font-family: 'Anybody', sans-serif;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.flex-box[b-296fdb2uvb] {
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+}
+
+.flex-box:nth-child(3)[b-296fdb2uvb], .flex-box:nth-child(4)[b-296fdb2uvb] {
+    width: 10%;
+}
+
+.flex-box > label[b-296fdb2uvb] {
+    font-family: inherit;
+    padding: 8px;
+}
+
+.flex-box > .filtro[b-296fdb2uvb] {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    border: 1px darkslateblue solid;
+    border-radius: 0;
+}
+
+.flex-box > #filtrar[b-296fdb2uvb] {
+    width: 100%;
+    font-family: inherit;
+    font-weight: 500;
+    background-color: white;
+    padding: 8px;
+    display: block;
+    grid-column: 1 / span 2;
+    border: 1px darkslateblue solid;
+}
+
+.flex-box > #filtrar:hover[b-296fdb2uvb] {
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.flex-box > p[b-296fdb2uvb] {;
+    margin: 0;
+    padding: 8px;
+}
+/* _content/MisCuentas.Web/Components/Pages/Indice.razor.rz.scp.css */
+#grid-container[b-sfxv78bl1m]{
     width: calc(100vw - 16px);
     height: calc(100vh - 16px);
     margin: auto;
@@ -13,26 +71,26 @@
     gap: 16px;
 }
 
-.espacio[b-rcgk2zprur] {
+.espacio[b-sfxv78bl1m] {
     height: 100%;
 }
 
-.espacio:first-child[b-rcgk2zprur] {
+.espacio:first-child[b-sfxv78bl1m] {
     grid-area: tc;
     box-shadow: 0 0 8px lightgrey;
 }
 
-.espacio:nth-child(2)[b-rcgk2zprur] {
+.espacio:nth-child(2)[b-sfxv78bl1m] {
     grid-area: lc;
     background-color: darkslateblue;
 }
 
-.espacio:nth-child(3)[b-rcgk2zprur] {
+.espacio:nth-child(3)[b-sfxv78bl1m] {
     grid-area: da;
     background-color: aliceblue;
 }
 
-.espacio:nth-child(4)[b-rcgk2zprur] {
+.espacio:nth-child(4)[b-sfxv78bl1m] {
     grid-area: re;
 }
 /* _content/MisCuentas.Web/Components/Pages/Lateral.razor.rz.scp.css */
