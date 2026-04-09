@@ -7,7 +7,7 @@ La base de datos utilizada es MySQL y se encuentra alojada en un servidor indepe
 Actualmente, no dispone de una interfaz especialmente amigable, pero el objetivo es ofrecer al usuario una interfaz más sencilla y orientada a la gestión de los movimientos contables de la aplicación.
 
 # FUNCIONES BÁSICAS
-El menú dispone de 5 funciones básicas, que pueden seleccionarse introduciendo el número correspondiente a cada opción.
+El menú dispone de 6 funciones básicas, que pueden seleccionarse introduciendo el número correspondiente a cada opción.
 
 - (1) Obtener Transacciones
 - (2) Añadir Transacciones
