@@ -1,5 +1,4 @@
 #flex-container {
-    height: 100%;
     font-family: 'Anybody', sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,7 +7,7 @@
 }
 
 .flex-box:first-child {
-    height: 128px;
+    height: 64px;
 }
 
 .flex-box > .option {
@@ -21,11 +20,11 @@
 }
 
 .flex-box > .option:hover {
-    background: white;
+    background: cornflowerblue;
     cursor: pointer;
     
     h2 {
-        color: black;
+        color: white;
         font-weight: 700;
     }
 }
@@ -38,7 +37,7 @@
 
 .flex-box > .option > h2 {
     width: 100%;
-    color: white;
+    color: black;
     font-size: 1rem;
     font-weight: 500;
     text-align: center;

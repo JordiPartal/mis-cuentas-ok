@@ -88,7 +88,7 @@ public class TransaccionServices : ITransaccionService
         foreach (var transaccion in transacciones)
         {
             data.AddRow();
-            data["cargo"] = transaccion.fechaCargo;
+            data["cargo"] = transaccion.fechaCargo.ToString("dd/MM/yyyy");
             data["tipo"] = transaccion.tipo;
             data["concepto"] = transaccion.concepto;
             data["sin impuesto"] = transaccion._base;

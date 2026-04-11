@@ -3,8 +3,8 @@
     height: calc(100vh - 16px);
     margin: auto;
     display: grid;
-    grid-template-columns: 128px repeat(3, 1fr);
-    grid-template-rows: 128px 1fr;
+    grid-template-columns: 128px 2fr 1fr 1fr;
+    grid-template-rows: 64px 1fr;
     grid-template-areas:
     "lc tc tc tc"
     "lc da da re"
@@ -23,7 +23,8 @@
 
 .espacio:nth-child(2) {
     grid-area: lc;
-    background-color: darkslateblue;
+    background-color: white;
+    box-shadow: 0 0 8px lightgrey;
 }
 
 .espacio:nth-child(3) {

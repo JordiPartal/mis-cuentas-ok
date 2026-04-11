@@ -37,21 +37,26 @@ else
     private string? _mesTexto;
     private Balance? _balance;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         _estadoFecha.AlCambiarEstado += RecargarDatos;
-        RecargarDatos();
+        await RecargarDatosAsync();
     }
 
     private void RecargarDatos()
+    {
+        _ = RecargarDatosAsync();
+    }
+
+    private async Task RecargarDatosAsync()
     {
         mes = _estadoFecha.Mes;
         ano = _estadoFecha.Anio;
         _mesTexto = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mes).ToUpper();
 
-        _balance = _balanceRepository.Balance(mes, ano);
+        _balance = await _balanceRepository.BalanceAsync(mes, ano);
 
-        InvokeAsync(StateHasChanged);
+        await InvokeAsync(StateHasChanged);
     }
 
     public void Dispose()

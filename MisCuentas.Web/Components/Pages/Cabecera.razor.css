@@ -45,7 +45,7 @@
 }
 
 .flex-box > #filtrar:hover {
-    background-color: darkslateblue;
+    background-color: cornflowerblue;
     color: white;
     cursor: pointer;
     font-weight: 700;

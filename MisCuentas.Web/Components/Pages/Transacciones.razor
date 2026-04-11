@@ -1,0 +1,36 @@
+@using System.Globalization
+@using MisCuentas.Domain.Models
+@inject EstadoFecha _estadoFecha
+@implements IDisposable
+
+<div id="flex-container">
+    <h1>Transacciones del mes de @_mesTexto</h1>
+</div>
+
+@code {
+    int mes, ano;
+    private string? _mesTexto;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _estadoFecha.AlCambiarEstado += RecargarDatos;
+        await RecargarDatosAsync();
+    }
+
+    private void RecargarDatos()
+    {
+        _ = RecargarDatosAsync();
+    }
+
+    private async Task RecargarDatosAsync()
+    {
+        mes = _estadoFecha.Mes;
+        _mesTexto = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mes).ToUpper();
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        _estadoFecha.AlCambiarEstado -= RecargarDatos;
+    }    
+}

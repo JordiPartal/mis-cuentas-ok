@@ -22,10 +22,47 @@ public class BalanceRepository : IBalanceRepository
     }
 
     /// <summary>
-    /// Represents the financial balance containing income, expenses, savings, and profit data.
+    /// Retrieves the financial balance information for a specific month and year asynchronously.
     /// </summary>
-    /// <param name="mes">The month used to filter the results. Can be null for no filtering by month.</param>
-    /// <param name="ano">The year used to filter the results. Can be null for no filtering by year.</param>
+    /// <param name="mes">The month used to filter the balance data. If null, no filtering by month is applied.</param>
+    /// <param name="ano">The year used to filter the balance data. If null, no filtering by year is applied.</param>
+    /// <returns>A <see cref="Balance"/> object containing financial balance details such as income, expenses, savings, and profit.</returns>
+    public async Task<Balance> BalanceAsync(int? mes, int? ano)
+    {
+        var balance = new Balance();
+
+        try
+        {
+            await using var conn = conexion.CrearConexion();
+            await conn.OpenAsync();
+
+            await using var cmd = conn.CreateCommand();
+            cmd.CommandText = Consulta.Balance.balance;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
+            cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
+            
+            await using var reader = await cmd.ExecuteReaderAsync();
+            if (await reader.ReadAsync())
+            {
+                balance.ingresos = reader.IsDBNull(0) ? 0 : Convert.ToDecimal(reader.GetValue(0));
+                balance.gastos = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1));
+                balance.ahorro = reader.IsDBNull(2) ? 0 : Convert.ToDecimal(reader.GetValue(2));
+                balance.ganancia = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3));
+            }
+        }
+        catch (MySqlException mySqlException)
+        {
+            _gestorDeErroresService.GestionarExcepcionesMySQL(mySqlException);
+            return new Balance { ingresos = 0, gastos = 0, ahorro = 0, ganancia = 0 };
+        }
+
+        return balance;
+    }
+
+    /// <summary>
+    /// Represents the financial balance, including details about income, expenses, savings, and profit.
+    /// </summary>
     public Balance Balance(int? mes, int? ano)
     {
         var balance = new Balance();
@@ -56,6 +93,6 @@ public class BalanceRepository : IBalanceRepository
             return new Balance { ingresos = 0, gastos = 0, ahorro = 0, ganancia = 0 };
         }
 
-        return balance;
+        return balance;    
     }
 }

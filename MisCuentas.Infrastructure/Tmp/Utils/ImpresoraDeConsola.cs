@@ -103,16 +103,20 @@ public class ImpresoraDeConsola
         
         Console.WriteLine();
     }
-    
+
     /// <summary>
-    /// Imprime el balance mensual
+    /// Imprime en la consola los detalles del balance financiero, incluyendo ingresos, gastos, ahorro, y ganancia.
     /// </summary>
-    /// <param name="Balance"></param>
-    public static void ImprimirBalance(Balance Balance)
+    /// <param name="balanceTask">El objeto <see cref="Balance"/> que contiene los datos financieros a mostrar.</param>
+    /// <returns>Una tarea asincrónica que representa la operación de impresión del balance.</returns>
+    /// <exception cref="Exception">Se lanza si el balance es nulo o si ocurre un error durante la operación.</exception>
+    public static void ImprimirBalance(Balance balanceTask)
     {
         try
         {
-            if (Balance == null) throw new Exception();
+            var balance = balanceTask;
+
+            if (balance == null) throw new Exception();
 
             CultureInfo culture = CultureInfo.InvariantCulture;
             string ingreso, gasto, ahorro, ganancia;
@@ -122,10 +126,10 @@ public class ImpresoraDeConsola
             Console.WriteLine(string.Join("|", cabecera));
             Console.WriteLine(string.Join("|", separado));
 
-            ingreso = Balance.ingresos.ToString("C").PadLeft(23, ' ');
-            gasto = Balance.gastos.ToString("C").PadLeft(23, ' ');
-            ahorro = Balance.ahorro.ToString("C").PadLeft(23, ' ');
-            ganancia = string.Concat(Balance.ganancia.ToString("N", culture), "%").PadLeft(23, ' ');
+            ingreso = balance.ingresos.ToString("C").PadLeft(23, ' ');
+            gasto = balance.gastos.ToString("C").PadLeft(23, ' ');
+            ahorro = balance.ahorro.ToString("C").PadLeft(23, ' ');
+            ganancia = string.Concat(balance.ganancia.ToString("N", culture), "%").PadLeft(23, ' ');
 
             Console.WriteLine($"{ingreso}|{gasto}|{ahorro}|{ganancia}");
 

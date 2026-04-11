@@ -7,6 +7,8 @@ public class EstadoFecha
     public event Action AlCambiarEstado;
     public void CambiarEstado(int mes, int anio)
     {
+        if (Mes.Equals(mes) && Anio.Equals(anio)) return;
+        
         Mes = mes;
         Anio = anio;
         NotificarCambio();
