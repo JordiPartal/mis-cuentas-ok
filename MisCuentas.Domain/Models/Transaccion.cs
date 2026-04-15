@@ -2,6 +2,7 @@ namespace MisCuentas.Domain.Models;
 
 public class Transaccion
 { 
+    public int? id { get; set; }
     public DateTime fechaCargo { get; set; }
     public string tipo { get; set; }
     public string concepto { get; set; }

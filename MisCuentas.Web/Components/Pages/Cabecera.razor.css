@@ -36,7 +36,7 @@
 .flex-box > #filtrar {
     width: 100%;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 600;
     background-color: white;
     padding: 8px;
     display: block;
@@ -48,7 +48,6 @@
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
-    font-weight: 700;
 }
 
 .flex-box > p {;

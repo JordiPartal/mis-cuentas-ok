@@ -1,15 +1,74 @@
 @using System.Globalization
+@using MisCuentas.Domain.Interface
 @using MisCuentas.Domain.Models
 @inject EstadoFecha _estadoFecha
+@inject ITransaccionService _transaccionService;
 @implements IDisposable
 
 <div id="flex-container">
     <h1>Transacciones del mes de @_mesTexto</h1>
+    <table id="tabla-transacciones">
+        <thead>
+        <tr>
+            @foreach (var cabecera in _cabecera)
+            {
+                <th>@cabecera</th>
+            }
+        </tr>
+        </thead>
+        @if (_transacciones == null)
+        {
+            <tbody>
+            <tr>
+                <td colspan="6">
+                    <p>No hay transacciones para el mes seleccionado</p>
+                </td>
+            </tr>
+            </tbody>
+        }
+        else
+        {
+            <tbody>
+            @foreach (var transaccion in _transacciones.Skip(indiceInicio).Take(registrosVisible))
+            {
+                <tr>
+                    <td class="num">@transaccion.id?.ToString().PadLeft(2, '0').</td>
+                    <td>@transaccion.fechaCargo.ToString("dd - MM - yyyy")</td>
+                    <td>@transaccion.tipo</td>
+                    <td>@transaccion.concepto</td>
+                    <td class="num">@transaccion._base.ToString("C")</td>
+                    <td class="num">@transaccion.cuota.ToString("C")</td>
+                    <td class="@EsNumero(transaccion.cantidad)">@transaccion.cantidad.ToString("C")</td>
+                </tr>
+            }
+            </tbody>
+        }
+    </table>
+    <div id="paginador">
+        <img src="img/csv.png" alt="paginador" />
+        <div id="acciones-paginador">
+            <button class="btn-paginador"
+                    disabled="@(indiceInicio == 0)"
+                    @onclick="@AnteriorPagina">
+                anterior
+            </button>
+            <button class="btn-paginador"
+                    disabled="@(indiceInicio + registrosVisible >= _transacciones?.Count)"
+                    @onclick="@SiguientePagina">
+                siguiente
+            </button>
+        </div>
+    </div>
 </div>
 
 @code {
     int mes, ano;
+    private int indiceInicio;
+    private int registrosVisible = 10;
     private string? _mesTexto;
+    private string[] _cabecera = { "#id", "cargo", "categoria", "concepto", "sin imp.", "iva/irpf", "total" };
+    
+    private List<Transaccion> _transacciones;
 
     protected override async Task OnInitializedAsync()
     {
@@ -25,12 +84,31 @@
     private async Task RecargarDatosAsync()
     {
         mes = _estadoFecha.Mes;
+        ano = _estadoFecha.Anio;
         _mesTexto = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mes).ToUpper();
+
+        _transacciones = await _transaccionService.ObtenerTransaccionAsync(mes, ano);
+        
         await InvokeAsync(StateHasChanged);
     }
 
     public void Dispose()
     {
         _estadoFecha.AlCambiarEstado -= RecargarDatos;
-    }    
+    }
+    
+    private string EsNumero(decimal value)
+    {
+        return value <= 0 ? "num-negativo" : "num-positivo";
+    }
+    
+    private void AnteriorPagina()
+    {
+        indiceInicio = Math.Max(0, indiceInicio - registrosVisible); ;
+    }
+
+    private void SiguientePagina()
+    {
+        indiceInicio += registrosVisible;
+    }
 }

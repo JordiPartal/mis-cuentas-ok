@@ -51,6 +51,45 @@ public class TransaccionServices : ITransaccionService
     }
 
     /// <summary>
+    /// Asynchronously retrieves transactions filtered by the specified month and year, or unfiltered if no parameters are provided.
+    /// </summary>
+    /// <param name="mes">The month to filter the transactions. Pass null to retrieve transactions for all months.</param>
+    /// <param name="ano">The year to filter the transactions. Pass null to retrieve transactions for all years.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a list of transactions.</returns>
+    public async Task<List<Transaccion>> ObtenerTransaccionAsync(int? mes, int? ano)
+    {
+        var id = 1;
+        var transacciones = new List<Transaccion>();
+        
+        using var conn = conexion.CrearConexion();
+        await conn.OpenAsync();
+
+        using var cmd = conn.CreateCommand();
+        cmd.CommandText = Consulta.Transacciones.obtener;
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
+        cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
+        
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            transacciones.Add(new Transaccion
+            {
+                id = id,
+                fechaCargo = reader.IsDBNull(0) ? DateTime.Now : reader.GetDateTime(0),
+                tipo = reader.IsDBNull(1) ? "N/D" : reader.GetString(1),
+                concepto = reader.IsDBNull(2) ? "N/D" : reader.GetString(2),
+                _base = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3)),
+                cuota = reader.IsDBNull(4) ? 0 :Convert.ToDecimal(reader.GetValue(4)),
+                cantidad = reader.IsDBNull(5) ? 0 : Convert.ToDecimal(reader.GetValue(5))        
+            });
+            id++;
+        }
+
+        return transacciones;
+    }
+
+    /// <summary>
     /// Añadir una transacción
     /// </summary>
     /// <param name="transaccion"></param>

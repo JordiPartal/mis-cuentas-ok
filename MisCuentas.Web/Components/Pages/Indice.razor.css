@@ -28,8 +28,9 @@
 }
 
 .espacio:nth-child(3) {
+    height: auto;
     grid-area: da;
-    background-color: aliceblue;
+    box-shadow: 0 0 8px lightgrey;
 }
 
 .espacio:nth-child(4) {
