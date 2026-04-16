@@ -7,39 +7,44 @@ namespace MisCuentas.Infrastructure.Tmp.MenuCommand;
 public class TransaccionCommand : IMenuCommand
 {
     private readonly ITransaccionService _transaccionService;
+    private readonly ICsvService _csvService;
+    private readonly IValidacionService _validacionService;
+    
     public string Nombre => "Obtener Transacciones";
-
-    public TransaccionCommand(ITransaccionService transaccionService)
+    
+    public TransaccionCommand(ITransaccionService transaccionService, ICsvService csvService, IValidacionService validacionService)
     {
         _transaccionService = transaccionService;
+        _csvService = csvService;
+        _validacionService = validacionService;
     }
     
     public void Ejecutar()
     {
-        int? mes = Validacion.LeerEnteroOpcional("Qué mes: ");
-        int? ano = Validacion.LeerEnteroOpcional("Qué año: ");
-
-        if (mes > 0 && ano > 0)
+        var delMes = _validacionService.ValidarNumero("Que mes: ");
+        var delAno = _validacionService.ValidarNumero("Que año: ");
+        
+        if (delMes > 0 && delAno > 0)
         {
-            var mesTexto = new CultureInfo("es-ES").DateTimeFormat.GetMonthName(mes.Value).ToUpper();  
-            var anoTexto = ano.ToString();
+            var mesTexto = new CultureInfo("es-ES").DateTimeFormat.GetMonthName(delMes.Value).ToUpper();  
+            var anoTexto = delAno.ToString();
             
             Console.WriteLine();
             Console.WriteLine($"Gastos e ingresos en el mes de {mesTexto} año {anoTexto}");
             Console.WriteLine();
         }
-        else if (mes > 0)
+        else if (delAno > 0)
         {
-            var mesTexto = new CultureInfo("es-ES").DateTimeFormat.GetMonthName(mes.Value).ToUpper();
-            ano = DateTime.Now.Year;
+            var mesTexto = new CultureInfo("es-ES").DateTimeFormat.GetMonthName(delAno.Value).ToUpper();
+            delAno = DateTime.Now.Year;
             
             Console.WriteLine();
             Console.WriteLine($"Gastos e ingresos en el mes de {mesTexto} del año en curso");
             Console.WriteLine();
         }
-        else if (ano > 0)
+        else if (delAno > 0)
         {
-            var anoTexto = ano.ToString(); 
+            var anoTexto = delAno.ToString(); 
             
             Console.WriteLine();
             Console.WriteLine($"Gastos e ingresos en el año {anoTexto}");
@@ -52,8 +57,9 @@ public class TransaccionCommand : IMenuCommand
             Console.WriteLine();
         }
         
-        var transaccionesFiltrado = _transaccionService.ObtenerTransaccion(mes, ano);
+        var transacciones = _transaccionService.ObtenerTransaccion(delMes, delAno);
+        _csvService.ExportarCSV(transacciones, "transacciones");
         
-        ImpresoraDeConsola.ImprimirTransaccion(transaccionesFiltrado);
+        ImpresoraDeConsola.ImprimirTransaccion(transacciones);
     }
 }

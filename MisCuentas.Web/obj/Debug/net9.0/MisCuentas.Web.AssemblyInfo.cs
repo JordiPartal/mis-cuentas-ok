@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisCuentas.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+480a554cd41c5958ee2a57d12aa5b2f0d27a9742")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43e24cbbbc8f8dea561bd2b1027f1fb6aa6c310b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisCuentas.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisCuentas.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,15 +1,18 @@
 using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Models;
 using MisCuentas.Infrastructure.Tmp.Utils;
 
 namespace MisCuentas.Infrastructure.Tmp.Controller;
 
 public class MenuController
 {
+    private readonly ExportarConfig _exportarConfig;
     private readonly List<IMenuCommand> _commands;
 
-    public MenuController(IEnumerable<IMenuCommand> commands)
+    public MenuController(IEnumerable<IMenuCommand> commands, ExportarConfig exportarConfig)
     {
         _commands = commands.ToList();
+        _exportarConfig = exportarConfig;
     }       
 
     public void Inicio()
@@ -23,9 +26,8 @@ public class MenuController
             Console.Write("Ingrese una opcion: ");
 
             var input = Console.ReadLine();
-            
-            if (input.Contains("-e")) Global.exportar  = true; 
-            if (input.Contains("-n")) Global.nombreCSV = input.Split(" ")[input.Split(" ").Length - 1];
+            if (input.Contains("-e")) _exportarConfig.Exportar = true;
+            if (input.Contains("-n")) _exportarConfig.NombreFichero = input.Split(" ").Last();
             
             input = input.Split(" ")[0];
             
