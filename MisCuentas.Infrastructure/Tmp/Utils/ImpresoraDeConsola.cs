@@ -68,8 +68,6 @@ public class ImpresoraDeConsola
         {
             Console.WriteLine("* N/D *");
         }
-        
-        Console.WriteLine();
     }
 
     /// <summary>

@@ -1,6 +1,4 @@
-using MisCuentas.Domain.Models;
-
-namespace MisCuentas.Domain.Interface;
+namespace MisCuentas.Domain.Interface.Service;
 
 public interface IRentabilidadService
 {

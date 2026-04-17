@@ -2,6 +2,8 @@
 using MisCuentas.Infrastructure.Tmp.Controller;
 using MisCuentas.Infrastructure.Tmp.MenuCommand;
 using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Interface.Repository;
+using MisCuentas.Domain.Interface.Service;
 using MisCuentas.Domain.Models;
 using MisCuentas.Infrastructure.Data;
 using MisCuentas.Infrastructure.Data.Repository;
@@ -24,15 +26,15 @@ public static class DependencyInjection
         
         // services
         services.AddTransient<IValidacionService, ValidacionService>();
-        services.AddTransient<ICsvService, CsvServices>();
+        services.AddTransient<ICsvService, CsvService>();
         services.AddTransient<IGestorDeErroresService, GestorDeErroresService>();
+        services.AddTransient<IImprimirConsolaServices, ImprimirConsolaService>();
         services.AddTransient<ITransaccionService, TransaccionServices>();
         services.AddTransient<IMovimientoService, MovimientoService>();
         services.AddTransient<IRentabilidadService, RentabilidadService>();
             
         // commands
-        services.AddTransient<IMenuCommand, TransaccionCommand>();
-        services.AddTransient<IMenuCommand, InsertaTransaccionCommand>();
+        services.AddTransient<IMenuCommand, TransaccionServices>();
         services.AddTransient<IMenuCommand, SumatorioCommand>();
         services.AddTransient<IMenuCommand, BalanceCommand>();
         services.AddTransient<IMenuCommand, MovimientoCommand>();

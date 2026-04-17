@@ -1,6 +1,6 @@
 using Csv;
 using System.Data;
-using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Interface.Service;
 using MisCuentas.Domain.Models;
 using MisCuentas.Infrastructure.Data;
 using MisCuentas.Infrastructure.Tmp.Utils;

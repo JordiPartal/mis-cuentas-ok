@@ -1,4 +1,4 @@
-namespace MisCuentas.Domain.Interface;
+namespace MisCuentas.Domain.Interface.Service;
 
 public interface ICsvService
 {

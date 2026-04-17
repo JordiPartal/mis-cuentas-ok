@@ -7,25 +7,29 @@ La base de datos utilizada es MySQL y se encuentra alojada en un servidor indepe
 Actualmente, no dispone de una interfaz especialmente amigable, pero el objetivo es ofrecer al usuario una interfaz más sencilla y orientada a la gestión de los movimientos contables de la aplicación.
 
 # FUNCIONES BÁSICAS
-El menú dispone de 6 funciones básicas, que pueden seleccionarse introduciendo el número correspondiente a cada opción.
+El menú dispone de 5 funciones básicas, que pueden seleccionarse introduciendo el número correspondiente a cada opción.
 
-- (1) Obtener Transacciones
-- (2) Añadir Transacciones
-- (3) Sumatorio
-- (4) Balance
-- (5) Obtener Movimientos
-- (6) Rentabilidad
+- (1) Transacciones
+- (2) Sumatorio
+- (3) Balance
+- (4) Obtener Movimientos
+- (5) Rentabilidad
 - (0) Salir
 
-## Obtener Transacciones
-Permite obtener todos los movimientos realizados en el **ejercicio económico/fiscal**, ya sea de **forma anual** o **mensual**. Además, estos datos pueden exportarse a **CSV** y la posibilidad de asignar un nombre al fichero exportado.
+## Transacciones
+Permite obtener todos los movimientos o añadir una nueva transacción.
 
 ![menu](imagen/menu.png) 
 
-![menu opcion](imagen/transaccion.png)
+### Obtener Transacciones
+Podemos visualizar los movimientos **mensuales**, **anuales** o, si se prefiere, a lo largo del **año académico en curso**.
 
-## Añadir Transacciones
+![menu.sub_01](imagen/transaccion_01.png)
+
+### Añadir Transacciones
 Permite añadir nuevos registros. Es necesario que el usuario introduzca **la fecha del cargo (en caso de ser el día actual, no es necesario)**, **el concepto**, **la cantidad** y **el tipo de gasto**.
+
+![menu.sub_02](imagen/transaccion_02.png)
 
 ## Sumatorio
 Permite obtener un sumatorio de los gastos realizados. Se pueden filtrar por **mes** y **año**, así como elegir que el cálculo se realice **por concepto** o **por categoría**. Además, ofrece la posibilidad de exportar toda la información en **CSV** y de asignar un nombre al fichero exportado.

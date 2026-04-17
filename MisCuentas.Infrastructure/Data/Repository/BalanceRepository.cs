@@ -1,8 +1,9 @@
 using System.Data;
+using MisCuentas.Domain.Interface.Repository;
+using MisCuentas.Domain.Interface.Service;
 using MySql.Data.MySqlClient;
 using MisCuentas.Infrastructure.Data;
 using MisCuentas.Infrastructure.Tmp.Utils;
-using MisCuentas.Domain.Interface;
 using MisCuentas.Domain.Models;
 
 namespace MisCuentas.Infrastructure.Service;

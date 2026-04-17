@@ -1,5 +1,5 @@
 using System.Data;
-using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Models;
 using MisCuentas.Infrastructure.Tmp.Utils;
 using MySql.Data.MySqlClient;
@@ -97,11 +97,11 @@ public class TransaccionRepository : ITransaccionRepository
         using var cmd = conn.CreateCommand();
         cmd.CommandText = Consulta.Transacciones.inserta;
         cmd.CommandType = CommandType.StoredProcedure;
-        cmd.Parameters.AddWithValue("@fecha", MySqlDbType.DateTime).Value = transaccion.fechaCargo;
-        cmd.Parameters.AddWithValue("@concepto", MySqlDbType.VarChar).Value = transaccion.tipo;
-        cmd.Parameters.AddWithValue("@cantidad", MySqlDbType.Decimal).Value = transaccion.concepto;
-        cmd.Parameters.AddWithValue("@categoria", MySqlDbType.Int16).Value = transaccion.idtipo;
-        cmd.Parameters.AddWithValue("@impuesto", MySqlDbType.Int16).Value = transaccion.idImpuesto;
+        cmd.Parameters.AddWithValue("@fecha", transaccion.fechaCargo);
+        cmd.Parameters.AddWithValue("@concepto", transaccion.concepto);
+        cmd.Parameters.AddWithValue("@cantidad", transaccion.cantidad);
+        cmd.Parameters.AddWithValue("@categoria", transaccion.idtipo);
+        cmd.Parameters.AddWithValue("@impuesto", transaccion.idImpuesto);
         
         cmd.ExecuteNonQuery();
     }

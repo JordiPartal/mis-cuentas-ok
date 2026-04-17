@@ -1,5 +1,5 @@
-using MisCuentas.Domain.Interface;
 using MySql.Data.MySqlClient;
+using MisCuentas.Domain.Interface.Service;
 
 namespace MisCuentas.Infrastructure.Service;
 

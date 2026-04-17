@@ -1,6 +1,5 @@
 using MisCuentas.Domain.Interface;
 using MisCuentas.Domain.Models;
-using MisCuentas.Infrastructure.Tmp.Utils;
 
 namespace MisCuentas.Infrastructure.Tmp.Controller;
 
@@ -29,7 +28,7 @@ public class MenuController
             if (input.Contains("-e")) _exportarConfig.Exportar = true;
             if (input.Contains("-n")) _exportarConfig.NombreFichero = input.Split(" ").Last();
             
-            input = input.Split(" ")[0];
+            input = input.Split(" ")[0].Trim();
             
             Console.WriteLine();
 
