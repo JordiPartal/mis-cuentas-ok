@@ -154,6 +154,10 @@ public class TransaccionServices : IMenuCommand, ITransaccionService
             _exportarConfig.Exportar = true;
             ObtenerTransaccion();
         }
+        else if (int.Parse(input.Split(" ")[0].Trim()).Equals(2))
+        {
+            AgregarTransaccion();
+        }
         else
         { 
             ObtenerTransaccion();

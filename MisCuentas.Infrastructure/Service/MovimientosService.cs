@@ -11,6 +11,9 @@ namespace MisCuentas.Infrastructure.Service;
 public class MovimientoService : IMovimientoService
 {
     private readonly ConexionBd conexion = new ConexionBd();
+    private readonly ExportarConfig _config;
+    
+    public MovimientoService(ExportarConfig config) => _config = config;
 
     /// <summary>
     /// Exports movements data to a CSV file for a specific month and year.
@@ -20,7 +23,7 @@ public class MovimientoService : IMovimientoService
     public void ExportarCSV(int? mes, int? ano)
     {
         List<Movimiento> movimientos = new List<Movimiento>();
-        var nombre = Global.nombreCSV ?? "contabilidad";
+        var nombre = _config.NombreFichero ?? "contabilidad";
         var carpeta = string.Join("/", Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "export");
         var data = new CsvExport(columnSeparator: ",", includeColumnSeparatorDefinitionPreamble: false);
         

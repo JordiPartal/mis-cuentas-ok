@@ -43,8 +43,11 @@ public class ValidacionService : IValidacionService
             return resultado;
         }
         
-        Console.WriteLine("Formato inválido, se usará la fecha actual.");
-        return DateTime.Now; 
+        Console.WriteLine();
+        Console.WriteLine("* Formato inválido o no ha introducido fecha, se pondrá la fecha de hoy *");
+        Console.WriteLine();
+        
+        return DateTime.Today; 
     }
     
     public int ValidarTipo(string mensaje)
