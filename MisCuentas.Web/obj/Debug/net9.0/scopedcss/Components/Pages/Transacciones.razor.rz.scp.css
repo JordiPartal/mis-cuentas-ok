@@ -1,0 +1,108 @@
+#flex-container[b-d976suoujk] {
+    font-family: 'Anybody', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    gap: 16px;
+}
+
+#tabla-transacciones[b-d976suoujk] {
+    font-family: 'Anybody', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    margin-top: 16px;
+    gap: 8px;
+}
+
+#paginador[b-d976suoujk] {
+    font-family: 'Anybody', sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+#flex-container > h1[b-d976suoujk] {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#tabla-transacciones > thead > tr > th[b-d976suoujk] {
+    font-weight: 400;
+    text-align: left;
+    padding: 16px 8px;
+    background: whitesmoke;
+    border-bottom: 1px solid lightgrey;
+}
+
+#tabla-transacciones > thead > tr > th:first-child[b-d976suoujk] {
+    width: 64px;
+    color: white;
+    font-weight: 600;
+    background: cornflowerblue;
+}
+
+#tabla-transacciones > thead > tr > th:nth-child(4)[b-d976suoujk] {
+    width: 30%;
+}
+
+#tabla-transacciones > tbody > tr > td[b-d976suoujk] {
+    padding: 16px 8px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#tabla-transacciones > tbody > tr > .num[b-d976suoujk], .num-positivo[b-d976suoujk], .num-negativo[b-d976suoujk] {
+    text-align: right;
+    font-weight: 500;
+}
+
+#tabla-transacciones > tbody > tr > .num-positivo[b-d976suoujk] {
+    color: green;
+}
+
+#tabla-transacciones > tbody > tr > .num-negativo[b-d976suoujk] {
+    color: red;
+}
+
+#paginador > img[b-d976suoujk] {
+    height: 40px;
+    margin-left: 0;
+}
+
+#paginador > img:hover[b-d976suoujk] {
+    cursor: pointer;
+}
+
+#paginador > #acciones-paginador[b-d976suoujk] {;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+#paginador > #acciones-paginador > .btn-paginador[b-d976suoujk] {
+    flex-grow: 1;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: white;
+    padding: 16px 8px;
+    display: block;
+    border: 1px darkslateblue solid;
+}
+
+#paginador > #acciones-paginador > .btn-paginador:hover[b-d976suoujk] {
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}

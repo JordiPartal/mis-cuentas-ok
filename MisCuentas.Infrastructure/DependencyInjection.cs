@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using MisCuenta.Infrastructure.Data.Repository;
+using MisCuenta.Infrastructure.Service;
 using MisCuentas.Infrastructure.Tmp.Controller;
 using MisCuentas.Infrastructure.Tmp.MenuCommand;
 using MisCuentas.Domain.Interface;
@@ -23,6 +25,7 @@ public static class DependencyInjection
         services.AddTransient<ITransaccionRepository, TransaccionRepository>();
         services.AddTransient<ISumatorioRepository, SumatorioRepository>();
         services.AddTransient<IBalanceRepository, BalanceRepository>();
+        services.AddTransient<IRentabilidadRepository, RentabilidadRepository>();
         
         // services
         services.AddTransient<IValidacionService, ValidacionService>();
@@ -36,9 +39,9 @@ public static class DependencyInjection
         // commands
         services.AddTransient<IMenuCommand, TransaccionServices>();
         services.AddTransient<IMenuCommand, SumatorioCommand>();
-        services.AddTransient<IMenuCommand, BalanceCommand>();
+        services.AddTransient<IMenuCommand, BalanceService>();
         services.AddTransient<IMenuCommand, MovimientoCommand>();
-        services.AddTransient<IMenuCommand, RentabilidadCommand>();
+        services.AddTransient<IMenuCommand, RentabilidadService>();
         
         // controllers
         services.AddTransient<MenuController>();

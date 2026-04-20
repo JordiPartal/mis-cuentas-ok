@@ -43,13 +43,13 @@ public class BalanceRepository : IBalanceRepository
             cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
             cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
             
-            await using var reader = await cmd.ExecuteReaderAsync();
-            if (await reader.ReadAsync())
+            await using var lector = await cmd.ExecuteReaderAsync();
+            if (await lector.ReadAsync())
             {
-                balance.ingresos = reader.IsDBNull(0) ? 0 : Convert.ToDecimal(reader.GetValue(0));
-                balance.gastos = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1));
-                balance.ahorro = reader.IsDBNull(2) ? 0 : Convert.ToDecimal(reader.GetValue(2));
-                balance.ganancia = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3));
+                balance.ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
+                balance.gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
+                balance.ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
+                balance.ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
             }
         }
         catch (MySqlException mySqlException)
@@ -79,13 +79,13 @@ public class BalanceRepository : IBalanceRepository
             cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
             cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
             
-            using var reader = cmd.ExecuteReader();
-            if (reader.Read())
+            using var lector = cmd.ExecuteReader();
+            if (lector.Read())
             {
-                balance.ingresos = reader.IsDBNull(0) ? 0 : Convert.ToDecimal(reader.GetValue(0));
-                balance.gastos = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1));
-                balance.ahorro = reader.IsDBNull(2) ? 0 : Convert.ToDecimal(reader.GetValue(2));
-                balance.ganancia = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3));
+                balance.ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
+                balance.gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
+                balance.ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
+                balance.ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
             }
         }
         catch (MySqlException mySqlException)

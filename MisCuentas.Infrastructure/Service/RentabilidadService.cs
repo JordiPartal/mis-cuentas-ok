@@ -1,78 +1,49 @@
-using Csv;
-using System.Data;
+using MisCuenta.Infrastructure.Data.Repository;
+using MisCuentas.Domain.Interface;
+using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Interface.Service;
 using MisCuentas.Domain.Models;
-using MisCuentas.Infrastructure.Data;
-using MisCuentas.Infrastructure.Tmp.Utils;
+using MisCuentas.Infrastructure.Service;
 
-namespace MisCuentas.Infrastructure.Service;
+namespace MisCuenta.Infrastructure.Service;
 
-public class RentabilidadService : IRentabilidadService
+public class RentabilidadService : IMenuCommand, IRentabilidadService
 {
-    private readonly ConexionBd conexion = new ConexionBd();
+    private readonly ExportarConfig _exportarConfig;
+    private readonly ICsvService _csvService;
+    private readonly IRentabilidadRepository _rentabilidadRepository;
+    
+    public string Nombre => "Rentabilidad";
+
+    public RentabilidadService(ICsvService csvService, IRentabilidadRepository rentabilidadRepository,
+        ExportarConfig exportarConfig)
+    {
+        _csvService = csvService;
+        _rentabilidadRepository = rentabilidadRepository;
+        _exportarConfig = exportarConfig;
+    }
 
     /// <summary>
-    /// Exports profitability data to a CSV file. This method retrieves data from the database using
-    /// a stored procedure, processes it into a predefined format, and writes it to a CSV file on the
-    /// user's desktop. The exported file is placed inside an "export" folder and named using a default
-    /// or globally provided filename.
-    /// This method ensures that any missing or null data is handled, and it provides status feedback
-    /// indicating the number of records exported. It also handles the creation of the target directory
-    /// if it does not exist.
+    /// Retrieves profitability data from the repository and exports it to a CSV file.
     /// </summary>
-    public void ExportarCSV()
+    /// <remarks>
+    /// The method uses the configured file name in <see cref="ExportarConfig"/> for the export.
+    /// If no file name is provided, a default name of "rentabilidad" is used.
+    /// The exported CSV file contains profitability data retrieved from the repository.
+    /// </remarks>
+    public void ObtenerRentabilidadYExportarCSV()
     {
-        List<Rentabilidad> rentabilidads = new List<Rentabilidad>();
-        var nombre = Global.nombreCSV ?? "rentabilidad";
-        var carpeta = string.Join("/", Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "export");
-        var data = new CsvExport(columnSeparator: ",", includeColumnSeparatorDefinitionPreamble: false);
+        var nombre = string.IsNullOrEmpty(_exportarConfig.NombreFichero) ? "rentabilidad" : _exportarConfig.NombreFichero;
+        var rentabilidad = _rentabilidadRepository.ObtenerRentabilidad();
         
-        using var conn = conexion.CrearConexion();
-        conn.Open();
+        Console.WriteLine($">> Se han exportado {rentabilidad.Count} registros");
         
-        using var cmd = conn.CreateCommand();
-        cmd.CommandText = Consulta.Rentabilidad.rentabilidad;
-        cmd.CommandType = CommandType.StoredProcedure;
-        
-        using var reader = cmd.ExecuteReader();
-        while (reader.Read())
-        {
-            rentabilidads.Add(new Rentabilidad()
-            {
-                ano = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
-                mes = reader.IsDBNull(1) ? 0 : reader.GetInt32(1),
-                mesTexto = reader.IsDBNull(2) ? "N/D" : reader.GetString(2),
-                ingresos = reader.IsDBNull(3) ? 0 : Convert.ToDecimal(reader.GetValue(3)),
-                gastos = reader.IsDBNull(4) ? 0 : Convert.ToDecimal(reader.GetValue(4)),
-                margen = reader.IsDBNull(5) ? 0 : Convert.ToDecimal(reader.GetValue(5)),
-                margenPorcentaje = reader.IsDBNull(6) ? 0 : Convert.ToDecimal(reader.GetValue(6)),
-                saldo = reader.IsDBNull(7) ? 0 : Convert.ToDecimal(reader.GetValue(7)),
-                rentabilidad = reader.IsDBNull(8) ? 0 : Convert.ToDecimal(reader.GetValue(8))
-            });
-        }
+        _exportarConfig.Exportar = true;
+        _csvService.ExportarCSV(rentabilidad, nombre);
+    }
 
-        foreach (var rentabilidad in rentabilidads)
-        {
-            data.AddRow();
-            data["ano"] = rentabilidad.ano;
-            data["mes"] = rentabilidad.mes;
-            data["mesTexto"] = rentabilidad.mesTexto;
-            data["ingresos"] = rentabilidad.ingresos;
-            data["gastos"] = rentabilidad.gastos;
-            data["margen"] = rentabilidad.margen;
-            data["margenPorcentaje"] = rentabilidad.margenPorcentaje;
-            data["saldo"] = rentabilidad.saldo;
-            data["rentabilidad"] = rentabilidad.rentabilidad;
-        }
-        
-        Console.WriteLine();
-        Console.Write($">> Se han exportado {rentabilidads.Count} registros");
-        Console.WriteLine();
-        
-        if (!Directory.Exists(carpeta)) Directory.CreateDirectory(carpeta);
-        data.ExportToFile(string.Join("/", carpeta, string.Concat(nombre, ".csv")));
-        
-        Global.exportar = false;
-        Global.nombreCSV = string.Empty;
+    public void Ejecutar()
+    {
+        ObtenerRentabilidadYExportarCSV();
     }
 }

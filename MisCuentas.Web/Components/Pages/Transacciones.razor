@@ -1,5 +1,6 @@
 @using System.Globalization
 @using MisCuentas.Domain.Interface
+@using MisCuentas.Domain.Interface.Service
 @using MisCuentas.Domain.Models
 @inject EstadoFecha _estadoFecha
 @inject ITransaccionService _transaccionService;
@@ -29,13 +30,22 @@
         else
         {
             <tbody>
-            @foreach (var transaccion in _transacciones.Skip(indiceInicio).Take(registrosVisible))
+            @foreach (var transaccion in _transacciones.Skip(indiceInicio).Take(registrosVisibles))
             {
                 <tr>
                     <td class="num">@transaccion.id?.ToString().PadLeft(2, '0').</td>
                     <td>@transaccion.fechaCargo.ToString("dd - MM - yyyy")</td>
                     <td>@transaccion.tipo</td>
-                    <td>@transaccion.concepto</td>
+                    
+                    @if (@transaccion.tipo == "Nomina")
+                    {
+                        <td>@transaccion.concepto (tfr)</td>
+                    }
+                    else
+                    {
+                        <td>@transaccion.concepto</td>
+                    }
+                    
                     <td class="num">@transaccion._base.ToString("C")</td>
                     <td class="num">@transaccion.cuota.ToString("C")</td>
                     <td class="@EsNumero(transaccion.cantidad)">@transaccion.cantidad.ToString("C")</td>
@@ -53,7 +63,7 @@
                 anterior
             </button>
             <button class="btn-paginador"
-                    disabled="@(indiceInicio + registrosVisible >= _transacciones?.Count)"
+                    disabled="@(indiceInicio + registrosVisibles >= _transacciones?.Count)"
                     @onclick="@SiguientePagina">
                 siguiente
             </button>
@@ -64,7 +74,7 @@
 @code {
     int mes, ano;
     private int indiceInicio;
-    private int registrosVisible = 10;
+    private int registrosVisibles = 10;
     private string? _mesTexto;
     private string[] _cabecera = { "#id", "cargo", "categoria", "concepto", "sin imp.", "iva/irpf", "total" };
     
@@ -78,6 +88,7 @@
 
     private void RecargarDatos()
     {
+        indiceInicio = 0;
         _ = RecargarDatosAsync();
     }
 
@@ -104,11 +115,11 @@
     
     private void AnteriorPagina()
     {
-        indiceInicio = Math.Max(0, indiceInicio - registrosVisible); ;
+        indiceInicio = Math.Max(0, indiceInicio - registrosVisibles); ;
     }
 
     private void SiguientePagina()
     {
-        indiceInicio += registrosVisible;
+        indiceInicio += registrosVisibles;
     }
 }

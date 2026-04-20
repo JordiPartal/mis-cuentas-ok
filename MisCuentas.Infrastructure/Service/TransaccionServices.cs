@@ -39,8 +39,8 @@ public class TransaccionServices : IMenuCommand, ITransaccionService
     /// </remarks>
     public void ObtenerTransaccion()
     {
-        var delMes = _validacionService.ValidarNumero("Que mes: ");
-        var delAno = _validacionService.ValidarNumero("Que año: ");
+        var delMes = _validacionService.ValidarNumero("Qué mes: ");
+        var delAno = _validacionService.ValidarNumero("Qué año: ");
         var nombre = string.IsNullOrEmpty(_exportarConfig.NombreFichero) ? "transacciones" : _exportarConfig.NombreFichero;
 
         if (delMes.HasValue && delAno.HasValue)
@@ -55,7 +55,6 @@ public class TransaccionServices : IMenuCommand, ITransaccionService
         else if (delMes.HasValue && !(delAno.HasValue))
         {
             var mesTexto = new CultureInfo("es-ES").DateTimeFormat.GetMonthName(delMes.Value).ToUpper();
-            delAno = DateTime.Now.Year;
             
             Console.WriteLine();
             Console.WriteLine($"Gastos e ingresos en el mes de {mesTexto} del año en curso");
