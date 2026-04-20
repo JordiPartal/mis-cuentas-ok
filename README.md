@@ -19,37 +19,37 @@ El menú dispone de 5 funciones básicas, que pueden seleccionarse introduciendo
 ## Transacciones
 Permite obtener todos los movimientos o añadir una nueva transacción.
 
-![menu](imagen/menu.png) 
+![menu](assets/imagen/menu.png) 
 
 ### Obtener Transacciones
 Podemos visualizar los movimientos **mensuales**, **anuales** o, si se prefiere, a lo largo del **año académico en curso**.
 
-![menu.sub_01](imagen/transaccion_01.png)
+![menu.sub_01](assets/imagen/transaccion_01.png)
 
 ### Añadir Transacciones
 Permite añadir nuevos registros. Es necesario que el usuario introduzca **la fecha del cargo (en caso de ser el día actual, no es necesario)**, **el concepto**, **la cantidad** y **el tipo de gasto**.
 
-![menu.sub_02](imagen/transaccion_02.png)
+![menu.sub_02](assets/imagen/transaccion_02.png)
 
 ## Sumatorio
 Permite obtener un sumatorio de los gastos realizados. Se pueden filtrar por **mes** y **año**, así como elegir que el cálculo se realice **por concepto** o **por categoría**. Además, ofrece la posibilidad de exportar toda la información en **CSV** y de asignar un nombre al fichero exportado.
 
-![sumatorio](imagen/sumatorio.png)
+![sumatorio](assets/imagen/sumatorio.png)
 
 ## Balance
 Permite obtener un resumen de los ingresos y gastos durante todo el año o filtrado por **mes** y **año**. Además, también ofrece la posibilidad de exportar toda la información en **CSV** y de asignar un nombre al fichero exportado.
 
-![balance](imagen/balance.png)
+![balance](assets/imagen/balance.png)
 
 ## Obtener Movimientos
 Exporta a **CSV** los movimientos contables registrados durante un período de tiempo determinado, aplicando los conceptos de **debe** y **haber**, y generando un fichero preparado para su tratamiento en **Excel** o **LibreOffice Calc**.
 
-![contabilidad](imagen/contabilidad.png)
+![contabilidad](assets/imagen/contabilidad.png)
 
 ## Rentabilidad
 Exporta a **CSV** la rentabilidad de la cuenta corriente para cada mes. Incluye la siguiente información: **año**, **mes**, **fecha**, **ingresos y gastos**, el **margen** (tanto en valor decimal como en porcentaje), el **saldo** y su correspondiente **rentabilidad**.
 
-![rentabilidad](imagen/rentabilidad.png)
+![rentabilidad](assets/imagen/rentabilidad.png)
 
 ## Salir
 Sale de la aplicación.
@@ -58,9 +58,9 @@ Sale de la aplicación.
 ## Parametro (-e)
 La aplicación acepta dos parametros `-e` y `-n`. El primer parámetor (-e) permite al usuario exportar la información que aparece en pantalla a un fichero **CSV**. Ejemplo: `Ingrese una opcion: 3 -e`.
 
-![exportar](imagen/exportar.png)
+![exportar](assets/imagen/exportar.png)
 
 ## Parametro (-n [nombre fichero])
 El segundo parámetro (-n) permite al usuario exportar la información que aparece en pantalla a un **CSV** y definir el nombre del fichero exportado. Ejemplo: `Ingrese una opción: 5 -n movimientos_marzo`.
 
-![nombrar](imagen/nombrar.png)
+![nombrar](assets/imagen/nombrar.png)
