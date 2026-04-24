@@ -1,9 +1,11 @@
 @implements IDisposable
 @inject EstadoFecha _estadoFecha
 @inject IBalanceRepository _balanceRepository
+@inject IBalanceService _balanceService
 @using System.Globalization
 @using MisCuentas.Domain.Interface
 @using MisCuentas.Domain.Interface.Repository
+@using MisCuentas.Domain.Interface.Service
 @using MisCuentas.Domain.Models
 
 @if (_balance == null || string.IsNullOrEmpty(_mesTexto))
@@ -14,29 +16,46 @@ else
 {
     <div id = "flex-container">
         <div class="flex-box">
-            <h1>@_balance.ingresos.ToString("C")</h1>
+            <h1>@FormatoCifras(_balance.ingresos, "C")</h1>
             <h2>Ingresos (@_mesTexto)</h2>
+            <div class="flex-box-div">
+                <img src="@CambiarImagen(_comparativa.ingresos, "green")" alt="Comparativa" />
+                <h3><strong style="color: green">@FormatoCifras(_comparativa.ingresos / 100, "P2")</strong> vs @_mesTextoAnterior</h3>
+            </div>
         </div>
         <div class="flex-box">
-            <h1>@_balance.gastos.ToString("C")</h1>
+            <h1>@FormatoCifras(_balance.gastos, "C", true)</h1>
             <h2>Gastos (@_mesTexto)</h2>
+            <div class="flex-box-div">
+                <img src="@CambiarImagen(_comparativa.ahorro, "red")" alt="Comparativa" />
+                <h3><strong style="color: red">@FormatoCifras(_comparativa.gastos / 100, "P2")</strong> @AnadirComparativa(_comparativa.gastos)</h3>
+            </div>
         </div>
         <div class="flex-box">
-            <h1>@_balance.ahorro.ToString("C")</h1>
+            <h1>@FormatoCifras(_balance.ahorro, "C", true)</h1>
             <h2>Margen (@_mesTexto)</h2>
+            <div class="flex-box-div">
+                <img src="@CambiarImagen(_comparativa.ahorro, "black")" alt="Comparativa" />
+                <h3><strong style="color: black">@FormatoCifras(_comparativa.ahorro / 100, "P2")</strong> vs @_mesTextoAnterior</h3>
+            </div>
         </div>
         <div class="flex-box">
-            <h1>@_balance.ganancia.ToString() %</h1>
+            <h1>@FormatoCifras(_balance.ganancia / 100, "P2", true)</h1>
             <h2>Margen (%) (@_mesTexto)</h2>
+            <div class="flex-box-div">
+                <img src="@CambiarImagen(_comparativa.ganancia, "slate")" alt="Comparativa" />
+                <h3><strong style="color: slateblue">@_comparativa.ganancia p. p.</strong> vs @_mesTextoAnterior</h3>
+            </div>
+            
         </div>
     </div>
 }
 
 @code {
 
-    int mes, ano;
-    private string? _mesTexto;
-    private Balance? _balance;
+    int mes, ano, mesAnterior, anoAnterior;
+    private string? _mesTexto, _mesTextoAnterior;
+    private Balance? _balance, _comparativa;
 
     protected override async Task OnInitializedAsync()
     {
@@ -54,8 +73,13 @@ else
         mes = _estadoFecha.Mes;
         ano = _estadoFecha.Anio;
         _mesTexto = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mes).ToUpper();
+        
+        mesAnterior = !mes.Equals(1) ? mes - 1 : 12;
+        anoAnterior = !mes.Equals(1) ? ano : ano - 1;
+        _mesTextoAnterior = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mesAnterior);
 
         _balance = await _balanceRepository.BalanceAsync(mes, ano);
+        _comparativa = await _balanceService.ObtenerComparativaMesActualAnterior(mes, ano);
 
         await InvokeAsync(StateHasChanged);
     }
@@ -65,4 +89,22 @@ else
         _estadoFecha.AlCambiarEstado -= RecargarDatos;
     }
 
+    private string FormatoCifras(decimal valor, string tipo, bool parentesis = false)
+    {
+        string resultado = Math.Abs(valor).ToString(tipo);
+        if (valor < 0 && parentesis) return string.Concat("( ", resultado, " )");
+        return resultado;
+    }
+
+    private string AnadirComparativa(decimal valor)
+    {
+        if (valor < 0) return $"mas vs. {_mesTextoAnterior}";
+        return $"menos vs. {_mesTextoAnterior}";
+    }
+
+    private string CambiarImagen(decimal valor, string color)
+    {
+        if(valor < 0) return string.Concat("img/", color, "_down.png");
+        return string.Concat("img/", color, "_up.png");
+    }
 }

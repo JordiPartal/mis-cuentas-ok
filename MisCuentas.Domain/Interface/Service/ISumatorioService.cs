@@ -2,8 +2,7 @@ using MisCuentas.Domain.Models;
 
 namespace MisCuentas.Domain.Interface.Service;
 
-public interface ISumatorioRepository
+public interface ISumatorioService
 {
-    public List<Sumatorio> ObtenerSumatorio(int? mes, int? ano, int? concepto);
-    public void ExportarCSV(List<Sumatorio> sumatorios);
+    public void ObtenerSumatorio();
 }

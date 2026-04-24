@@ -41,6 +41,23 @@ public class ValidacionService : IValidacionService
     }
 
     /// <summary>
+    /// Prompts the user with a message and reads their input from the console.
+    /// Depending on the input, returns a specific integer value to represent the
+    /// user's choice or input status.
+    /// </summary>
+    /// <param name="mensaje">The message to display to the user prompting for input.</param>
+    /// <returns>
+    /// Returns 0 if the user inputs "si" (case-insensitive); otherwise, returns 1.
+    /// </returns>
+    public int ValidarInput(string mensaje)
+    {
+        Console.Write(mensaje);
+        string? opcion = Console.ReadLine();
+        if (opcion == "si".ToLower()) return 0;
+        return 1;
+    }
+
+    /// <summary>
     /// Validates a decimal input provided by the user through the console.
     /// Displays a message to prompt for input and attempts to parse the response as a decimal value.
     /// If the parsing is successful, the decimal value is returned; otherwise, 0 is returned.

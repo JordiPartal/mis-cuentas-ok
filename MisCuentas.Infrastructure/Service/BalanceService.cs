@@ -33,6 +33,45 @@ public class BalanceService : IMenuCommand, IBalanceService
     }
 
     /// <summary>
+    /// Compares the balance details of the specified month and year with the previous month.
+    /// </summary>
+    /// <param name="mes">The current month for which the comparison is to be made.</param>
+    /// <param name="ano">The year corresponding to the current month for the comparison.</param>
+    /// <returns>A <see cref="Balance"/> object containing the percentage differences in incomes, expenses, savings, and profits between the current month and the previous month.</returns>
+    public async Task<Balance> ObtenerComparativaMesActualAnterior(int mes, int ano)
+    {
+        decimal gananciaComparada;
+        int mesAnterior, anoAnterior;
+        Balance balanceMesAnterior, balanceMesActual;
+
+        try
+        {
+            mesAnterior = !mes.Equals(1) ? mes - 1 : 12;
+            anoAnterior = !mes.Equals(1) ? ano : ano - 1;
+            balanceMesActual = await _balanceRepository.BalanceAsync(mes, ano);
+            balanceMesAnterior = await _balanceRepository.BalanceAsync(mesAnterior, anoAnterior);
+            
+            return new()
+            {
+                ingresos = ((balanceMesActual.ingresos - balanceMesAnterior.ingresos) / Math.Abs(balanceMesAnterior.ingresos)) * 100,
+                gastos = ((balanceMesActual.gastos - balanceMesAnterior.gastos) / Math.Abs(balanceMesAnterior.gastos)) * 100,
+                ahorro = ((balanceMesActual.ahorro - balanceMesAnterior.ahorro) / Math.Abs(balanceMesAnterior.ahorro)) * 100,
+                ganancia = balanceMesActual.ganancia - balanceMesAnterior.ganancia,
+            };
+        }
+        catch (Exception e)
+        {
+            return new()
+            {
+                ingresos = 0,
+                gastos = 0,
+                ahorro = 0,
+                ganancia = 0
+            };
+        }
+    }
+
+    /// <summary>
     /// Executes the command to retrieve and display balance information for a specific month and year.
     /// </summary>
     /// <remarks>

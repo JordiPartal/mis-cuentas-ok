@@ -4,6 +4,7 @@
 @using MisCuentas.Domain.Models
 @inject EstadoFecha _estadoFecha
 @inject ITransaccionService _transaccionService;
+@inject ICsvService _csvService;
 @implements IDisposable
 
 <div id="flex-container">
@@ -55,7 +56,7 @@
         }
     </table>
     <div id="paginador">
-        <img src="img/csv.png" alt="paginador" />
+        <img @onclick="@ExportarTabla" src="img/csv.png" alt="paginador" />
         <div id="acciones-paginador">
             <button class="btn-paginador"
                     disabled="@(indiceInicio == 0)"
@@ -121,5 +122,11 @@
     private void SiguientePagina()
     {
         indiceInicio += registrosVisibles;
+    }
+
+    private void ExportarTabla()
+    {
+        string nombre = $"transacciones_{_mesTexto.ToLower()}_{ano}";
+        _csvService.ExportarCSV(_transacciones, nombre);
     }
 }

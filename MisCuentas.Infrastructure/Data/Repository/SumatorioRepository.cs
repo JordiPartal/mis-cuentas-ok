@@ -1,5 +1,6 @@
 using Csv;
 using System.Data;
+using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Interface.Service;
 using MySql.Data.MySqlClient;
 using MisCuentas.Infrastructure.Data;
@@ -55,8 +56,6 @@ public class SumatorioRepository : ISumatorioRepository
                     total = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1))
                 });
             }
-            
-            if(Global.exportar) ExportarCSV(sumatorios);
         }
         catch (MySqlException mySqlException)
         {
@@ -65,29 +64,5 @@ public class SumatorioRepository : ISumatorioRepository
         }
         
         return sumatorios;
-    }
-
-    /// <summary>
-    /// Exports a list of sumatorios to a CSV file.
-    /// </summary>
-    /// <param name="sumatorios">The list of sumatorios to export.</param>
-    public void ExportarCSV(List<Sumatorio> sumatorios)
-    {
-        var nombre = Global.nombreCSV ?? "sumatorios";
-        var carpeta = string.Join("/", Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "export");
-        var data = new CsvExport(columnSeparator: ",", includeColumnSeparatorDefinitionPreamble: false);
-
-        foreach (var sumatorio in sumatorios)
-        {
-            data.AddRow();
-            data["concepto"] = sumatorio.concepto;
-            data["total"] = sumatorio.total;
-        }
-        
-        if (!Directory.Exists(carpeta)) Directory.CreateDirectory(carpeta);
-        data.ExportToFile(string.Join("/", carpeta, string.Concat(nombre, ".csv")));
-        
-        Global.exportar = false;
-        Global.nombreCSV = string.Empty;
     }
 }

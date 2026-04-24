@@ -135,8 +135,6 @@ public class ImprimirConsolaService : IImprimirConsolaServices
         {
             Console.WriteLine("* N/D *");
         }
-        
-        Console.WriteLine();
     }
 
     /// <summary>

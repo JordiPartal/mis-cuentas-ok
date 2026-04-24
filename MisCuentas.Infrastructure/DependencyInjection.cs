@@ -32,13 +32,14 @@ public static class DependencyInjection
         services.AddTransient<ICsvService, CsvService>();
         services.AddTransient<IGestorDeErroresService, GestorDeErroresService>();
         services.AddTransient<IImprimirConsolaServices, ImprimirConsolaService>();
+        services.AddTransient<IBalanceService, BalanceService>();
         services.AddTransient<ITransaccionService, TransaccionServices>();
         services.AddTransient<IMovimientoService, MovimientoService>();
         services.AddTransient<IRentabilidadService, RentabilidadService>();
             
         // commands
         services.AddTransient<IMenuCommand, TransaccionServices>();
-        services.AddTransient<IMenuCommand, SumatorioCommand>();
+        services.AddTransient<IMenuCommand, SumatorioService>();
         services.AddTransient<IMenuCommand, BalanceService>();
         services.AddTransient<IMenuCommand, MovimientoCommand>();
         services.AddTransient<IMenuCommand, RentabilidadService>();

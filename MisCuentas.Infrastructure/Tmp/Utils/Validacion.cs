@@ -22,7 +22,7 @@ public class Validacion
     /// </summary>
     /// <param name="mensaje"></param>
     /// <returns></returns>
-    public static int? LeerInput(string mensaje)
+    public static int LeerInput(string mensaje)
     {
         Console.Write(mensaje);
         string? opcion = Console.ReadLine();

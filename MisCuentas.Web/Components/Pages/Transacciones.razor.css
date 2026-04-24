@@ -76,9 +76,11 @@
 #paginador > img {
     height: 40px;
     margin-left: 0;
+    transition: height 0.2s ease-in-out;
 }
 
 #paginador > img:hover {
+    height: 36px;
     cursor: pointer;
 }
 
@@ -105,4 +107,16 @@
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
+}
+
+#paginador > #acciones-paginador > .btn-paginador:disabled {
+    color: gray;
+    background-color: white;
+    cursor: not-allowed;
+}
+
+#paginador > #acciones-paginador > .btn-paginador:disabled:hover {
+    color: gray;
+    background-color: white;
+    cursor: not-allowed;
 }
