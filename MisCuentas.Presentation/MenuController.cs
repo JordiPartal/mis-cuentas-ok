@@ -1,7 +1,7 @@
 using MisCuentas.Domain.Interface;
 using MisCuentas.Domain.Models;
 
-namespace MisCuentas.Infrastructure.Tmp.Controller;
+namespace MisCuentas.Presentation;
 
 public class MenuController
 {

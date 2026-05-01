@@ -27,6 +27,7 @@ public class ImprimirConsolaService : IImprimirConsolaServices
     /// </summary>
     public void Bienvenida()
     {
+        Console.WriteLine();
         Console.WriteLine(new string('=', 48));
         Console.WriteLine("> Bienvenido al gestor de cuentas".ToUpper());
         Console.WriteLine(new string('=', 48));
@@ -55,14 +56,14 @@ public class ImprimirConsolaService : IImprimirConsolaServices
 
             foreach (var item in transacciones)
             {
-                string fecha = item.fechaCargo.ToString("ddd, dd \\de MMM yyyy").PadRight(23, ' ');
-                string tipo = item.tipo.PadRight(23, ' ');
-                string concepto = item.concepto.PadRight(23, ' ');
-                string _base = item._base.ToString("C").PadLeft(23, ' ');
-                string cuota = item.cuota.ToString("C").PadLeft(23, ' ');
-                string cantidad = item.cantidad.ToString("C").PadLeft(24, ' ');
+                string fecha = item.FechaCargo.ToString("ddd, dd \\de MMM yyyy").PadRight(23, ' ');
+                string tipo = item.Tipo.PadRight(23, ' ');
+                string concepto = item.Concepto.PadRight(23, ' ');
+                string baseImponible = item.BaseImponible.ToString("C").PadLeft(23, ' ');
+                string cuota = item.Cuota.ToString("C").PadLeft(23, ' ');
+                string cantidad = item.Cantidad.ToString("C").PadLeft(24, ' ');
 
-                Console.WriteLine($"{string.Join("|", fecha, tipo, concepto, _base, cuota, cantidad)}");
+                Console.WriteLine($"{string.Join("|", fecha, tipo, concepto, baseImponible, cuota, cantidad)}");
             }
         }
         catch (Exception)
@@ -91,10 +92,10 @@ public class ImprimirConsolaService : IImprimirConsolaServices
             Console.WriteLine(string.Join("|", cabecera));
             Console.WriteLine(string.Join("|", separado));
 
-            ingreso = balance.ingresos.ToString("C").PadLeft(23, ' ');
-            gasto = balance.gastos.ToString("C").PadLeft(23, ' ');
-            ahorro = balance.ahorro.ToString("C").PadLeft(23, ' ');
-            ganancia = string.Concat(balance.ganancia.ToString("N", culture), "%").PadLeft(23, ' ');
+            ingreso = balance.Ingresos.ToString("C").PadLeft(23, ' ');
+            gasto = balance.Gastos.ToString("C").PadLeft(23, ' ');
+            ahorro = balance.Ahorro.ToString("C").PadLeft(23, ' ');
+            ganancia = string.Concat(balance.Ganancia.ToString("N", culture), "%").PadLeft(23, ' ');
 
             Console.WriteLine($"{ingreso}|{gasto}|{ahorro}|{ganancia}");
 
@@ -126,8 +127,8 @@ public class ImprimirConsolaService : IImprimirConsolaServices
 
             foreach (var item in lista)
             {
-                string concepto = item.concepto.PadRight(23, ' ');
-                string total = item.total.ToString("C").PadLeft(24, ' ');
+                string concepto = item.Concepto.PadRight(23, ' ');
+                string total = item.Total.ToString("C").PadLeft(24, ' ');
                 Console.WriteLine($"{concepto}|{total}");
             }
         }

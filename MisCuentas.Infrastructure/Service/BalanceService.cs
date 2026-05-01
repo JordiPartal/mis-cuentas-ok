@@ -53,20 +53,20 @@ public class BalanceService : IMenuCommand, IBalanceService
             
             return new()
             {
-                ingresos = ((balanceMesActual.ingresos - balanceMesAnterior.ingresos) / Math.Abs(balanceMesAnterior.ingresos)) * 100,
-                gastos = ((balanceMesActual.gastos - balanceMesAnterior.gastos) / Math.Abs(balanceMesAnterior.gastos)) * 100,
-                ahorro = ((balanceMesActual.ahorro - balanceMesAnterior.ahorro) / Math.Abs(balanceMesAnterior.ahorro)) * 100,
-                ganancia = balanceMesActual.ganancia - balanceMesAnterior.ganancia,
+                Ingresos = ((balanceMesActual.Ingresos - balanceMesAnterior.Ingresos) / Math.Abs(balanceMesAnterior.Ingresos)) * 100,
+                Gastos = ((balanceMesActual.Gastos - balanceMesAnterior.Gastos) / Math.Abs(balanceMesAnterior.Gastos)) * 100,
+                Ahorro = ((balanceMesActual.Ahorro - balanceMesAnterior.Ahorro) / Math.Abs(balanceMesAnterior.Ahorro)) * 100,
+                Ganancia = balanceMesActual.Ganancia - balanceMesAnterior.Ganancia,
             };
         }
         catch (Exception e)
         {
             return new()
             {
-                ingresos = 0,
-                gastos = 0,
-                ahorro = 0,
-                ganancia = 0
+                Ingresos = 0,
+                Gastos = 0,
+                Ahorro = 0,
+                Ganancia = 0
             };
         }
     }

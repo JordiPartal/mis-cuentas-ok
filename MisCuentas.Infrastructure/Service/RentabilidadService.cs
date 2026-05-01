@@ -1,9 +1,7 @@
-using MisCuenta.Infrastructure.Data.Repository;
 using MisCuentas.Domain.Interface;
 using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Interface.Service;
 using MisCuentas.Domain.Models;
-using MisCuentas.Infrastructure.Service;
 
 namespace MisCuenta.Infrastructure.Service;
 
@@ -40,6 +38,9 @@ public class RentabilidadService : IMenuCommand, IRentabilidadService
         
         _exportarConfig.Exportar = true;
         _csvService.ExportarCSV(rentabilidad, nombre);
+        
+        _exportarConfig.Exportar = false;
+        _exportarConfig.NombreFichero = string.Empty;
     }
 
     public void Ejecutar()

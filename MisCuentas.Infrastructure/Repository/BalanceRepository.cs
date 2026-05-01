@@ -1,16 +1,16 @@
 using System.Data;
+using MisCuentas.Domain.Enums;
 using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Interface.Service;
 using MySql.Data.MySqlClient;
 using MisCuentas.Infrastructure.Data;
-using MisCuentas.Infrastructure.Tmp.Utils;
 using MisCuentas.Domain.Models;
 
-namespace MisCuentas.Infrastructure.Service;
+namespace MisCuenta.Infrastructure.Repository;
 
 public class BalanceRepository : IBalanceRepository
 {
-    private readonly ConexionBd conexion = new ConexionBd();
+    private readonly ConexionBd _conexion = new ConexionBd();
     private readonly IGestorDeErroresService _gestorDeErroresService; // 1. La variable
 
     /// <summary>
@@ -34,11 +34,11 @@ public class BalanceRepository : IBalanceRepository
 
         try
         {
-            await using var conn = conexion.CrearConexion();
+            await using var conn = _conexion.CrearConexion();
             await conn.OpenAsync();
 
             await using var cmd = conn.CreateCommand();
-            cmd.CommandText = Consulta.Balance.balance;
+            cmd.CommandText = SpBalance.SP_Balance.ToString();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
             cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
@@ -46,16 +46,16 @@ public class BalanceRepository : IBalanceRepository
             await using var lector = await cmd.ExecuteReaderAsync();
             if (await lector.ReadAsync())
             {
-                balance.ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
-                balance.gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
-                balance.ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
-                balance.ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
+                balance.Ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
+                balance.Gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
+                balance.Ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
+                balance.Ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
             }
         }
         catch (MySqlException mySqlException)
         {
             _gestorDeErroresService.GestionarExcepcionesMySQL(mySqlException);
-            return new Balance { ingresos = 0, gastos = 0, ahorro = 0, ganancia = 0 };
+            return new Balance { Ingresos = 0, Gastos = 0, Ahorro = 0, Ganancia = 0 };
         }
 
         return balance;
@@ -70,11 +70,11 @@ public class BalanceRepository : IBalanceRepository
 
         try
         {
-            using var conn = conexion.CrearConexion();
+            using var conn = _conexion.CrearConexion();
             conn.Open();
 
             using var cmd = conn.CreateCommand();
-            cmd.CommandText = Consulta.Balance.balance;
+            cmd.CommandText = SpBalance.SP_Balance.ToString();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
             cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
@@ -82,16 +82,16 @@ public class BalanceRepository : IBalanceRepository
             using var lector = cmd.ExecuteReader();
             if (lector.Read())
             {
-                balance.ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
-                balance.gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
-                balance.ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
-                balance.ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
+                balance.Ingresos = lector.IsDBNull(0) ? 0 : Convert.ToDecimal(lector.GetValue(0));
+                balance.Gastos = lector.IsDBNull(1) ? 0 : Convert.ToDecimal(lector.GetValue(1));
+                balance.Ahorro = lector.IsDBNull(2) ? 0 : Convert.ToDecimal(lector.GetValue(2));
+                balance.Ganancia = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3));
             }
         }
         catch (MySqlException mySqlException)
         {
             _gestorDeErroresService.GestionarExcepcionesMySQL(mySqlException);
-            return new Balance { ingresos = 0, gastos = 0, ahorro = 0, ganancia = 0 };
+            return new Balance { Ingresos = 0, Gastos = 0, Ahorro = 0, Ganancia = 0 };
         }
 
         return balance;    

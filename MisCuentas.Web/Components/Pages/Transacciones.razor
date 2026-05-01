@@ -34,22 +34,22 @@
             @foreach (var transaccion in _transacciones.Skip(indiceInicio).Take(registrosVisibles))
             {
                 <tr>
-                    <td class="num">@transaccion.id?.ToString().PadLeft(2, '0').</td>
-                    <td>@transaccion.fechaCargo.ToString("dd - MM - yyyy")</td>
-                    <td>@transaccion.tipo</td>
+                    <td class="num">@transaccion.Id?.ToString().PadLeft(2, '0').</td>
+                    <td>@transaccion.FechaCargo.ToString("dd - MM - yyyy")</td>
+                    <td>@transaccion.Tipo</td>
                     
-                    @if (@transaccion.tipo == "Nomina")
+                    @if (@transaccion.Tipo == "Nomina")
                     {
-                        <td>@transaccion.concepto (tfr)</td>
+                        <td>@transaccion.Concepto (tfr)</td>
                     }
                     else
                     {
-                        <td>@transaccion.concepto</td>
+                        <td>@transaccion.Concepto</td>
                     }
                     
-                    <td class="num">@transaccion._base.ToString("C")</td>
-                    <td class="num">@transaccion.cuota.ToString("C")</td>
-                    <td class="@EsNumero(transaccion.cantidad)">@transaccion.cantidad.ToString("C")</td>
+                    <td class="num">@transaccion.BaseImponible.ToString("C")</td>
+                    <td class="num">@transaccion.Cuota.ToString("C")</td>
+                    <td class="@EsNumero(transaccion.Cantidad)">@transaccion.Cantidad.ToString("C")</td>
                 </tr>
             }
             </tbody>

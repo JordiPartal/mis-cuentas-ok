@@ -1,13 +1,12 @@
-using Csv;
 using System.Data;
 using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Interface.Service;
+using MisCuentas.Domain.Enums;
 using MySql.Data.MySqlClient;
 using MisCuentas.Infrastructure.Data;
-using MisCuentas.Infrastructure.Tmp.Utils;
 using MisCuentas.Domain.Models;
 
-namespace MisCuentas.Infrastructure.Service;
+namespace MisCuenta.Infrastructure.Repository;
 
 
 public class SumatorioRepository : ISumatorioRepository
@@ -40,7 +39,7 @@ public class SumatorioRepository : ISumatorioRepository
             conn.Open();
 
             var cmd = conn.CreateCommand();
-            cmd.CommandText = Consulta.Sumatorios.sumatorio;
+            cmd.CommandText = SpSumatorios.SP_Sumatorio.ToString();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
             cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
@@ -52,8 +51,8 @@ public class SumatorioRepository : ISumatorioRepository
             {
                 sumatorios.Add(new Sumatorio()
                 {
-                    concepto = reader.IsDBNull(0) ? "N/D" : reader.GetString(0),
-                    total = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1))
+                    Concepto = reader.IsDBNull(0) ? "N/D" : reader.GetString(0),
+                    Total = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader.GetValue(1))
                 });
             }
         }

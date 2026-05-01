@@ -1,10 +1,10 @@
 using System.Data;
 using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Models;
+using MisCuentas.Domain.Enums;
 using MisCuentas.Infrastructure.Data;
-using MisCuentas.Infrastructure.Tmp.Utils;
 
-namespace MisCuenta.Infrastructure.Data.Repository;
+namespace MisCuenta.Infrastructure.Repository;
 
 public class RentabilidadRepository : IRentabilidadRepository
 {
@@ -25,7 +25,7 @@ public class RentabilidadRepository : IRentabilidadRepository
         conn.Open();
 
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = Consulta.Rentabilidad.rentabilidad;
+        cmd.CommandText = SpRentabilidad.SP_Rentabilidad.ToString();
         cmd.CommandType = CommandType.StoredProcedure;
 
         using var lector = cmd.ExecuteReader();
@@ -33,15 +33,15 @@ public class RentabilidadRepository : IRentabilidadRepository
         {
             rentabilidad.Add(new Rentabilidad()
             {
-                ano = lector.IsDBNull(0) ? 0 : lector.GetInt32(0),
-                mes = lector.IsDBNull(1) ? 0 : lector.GetInt32(1),
-                mesTexto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
-                ingresos = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
-                gastos = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
-                margen = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5)),
-                margenPorcentaje = lector.IsDBNull(6) ? 0 : Convert.ToDecimal(lector.GetValue(6)),
-                saldo = lector.IsDBNull(7) ? 0 : Convert.ToDecimal(lector.GetValue(7)),
-                rentabilidad = lector.IsDBNull(8) ? 0 : Convert.ToDecimal(lector.GetValue(8))
+                Ano = lector.IsDBNull(0) ? 0 : lector.GetInt32(0),
+                Mes = lector.IsDBNull(1) ? 0 : lector.GetInt32(1),
+                MesTexto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
+                Ingresos = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
+                Gastos = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
+                Margen = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5)),
+                MargenPorcentaje = lector.IsDBNull(6) ? 0 : Convert.ToDecimal(lector.GetValue(6)),
+                Saldo = lector.IsDBNull(7) ? 0 : Convert.ToDecimal(lector.GetValue(7)),
+                SuRentabilidad = lector.IsDBNull(8) ? 0 : Convert.ToDecimal(lector.GetValue(8))
             });
         }
         

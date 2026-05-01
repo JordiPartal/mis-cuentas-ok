@@ -28,12 +28,12 @@ public class CsvService : ICsvService
             foreach (var item in lista.Cast<Transaccion>())
             {
                 datos.AddRow();
-                datos["cargo"] = item.fechaCargo.ToString("yyyy-MM-dd");
-                datos["tipo"] = item.tipo;
-                datos["concepto"] = item.concepto;
-                datos["sin impuestos"] = item._base;
-                datos["iva/irpf"] = item.cuota;
-                datos["total"] = item.cantidad;
+                datos["cargo"] = item.FechaCargo.ToString("yyyy-MM-dd");
+                datos["tipo"] = item.Tipo;
+                datos["concepto"] = item.Concepto;
+                datos["sin impuestos"] = item.BaseImponible;
+                datos["iva/irpf"] = item.Cuota;
+                datos["total"] = item.Cantidad;
             }
         }
         else

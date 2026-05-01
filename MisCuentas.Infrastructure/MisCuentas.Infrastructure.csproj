@@ -18,10 +18,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MisCuentas.Domain\MisCuentas.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Tmp\" />
+      <ProjectReference Include="..\MisCuentas.Presentation\MisCuentas.Presentation.csproj" />
     </ItemGroup>
 
 </Project>

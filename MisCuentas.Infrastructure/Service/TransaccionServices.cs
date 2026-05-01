@@ -80,6 +80,9 @@ public class TransaccionServices : IMenuCommand, ITransaccionService
         _imprimirConsolaServices.Transacciones(transacciones);
         
         if(_exportarConfig.Exportar) _csvService.ExportarCSV(transacciones, nombre);
+        
+        _exportarConfig.Exportar = false;
+        _exportarConfig.NombreFichero = string.Empty;
     }
 
     /// <summary>
@@ -108,15 +111,15 @@ public class TransaccionServices : IMenuCommand, ITransaccionService
     {
         var transaccion = new Transaccion();
 
-        transaccion.fechaCargo = _validacionService.ValidarFecha("Fecha: ");
-        transaccion.concepto = _validacionService.ValidarTexto("Concepto: ");
-        transaccion.cantidad = _validacionService.ValidarDecimal("Cantidad: ");
+        transaccion.FechaCargo = _validacionService.ValidarFecha("Fecha: ");
+        transaccion.Concepto = _validacionService.ValidarTexto("Concepto: ");
+        transaccion.Cantidad = _validacionService.ValidarDecimal("Cantidad: ");
         
         _imprimirConsolaServices.ImprimirTipoDeGasto();
-        transaccion.idtipo = _validacionService.ValidarTipo("Tipo de gasto: ");
+        transaccion.IdTipo = _validacionService.ValidarTipo("Tipo de gasto: ");
         
         _imprimirConsolaServices.ImprimirTipoDeImpuesto();
-        transaccion.idImpuesto = _validacionService.ValidarTipo("Tipo de impuesto: ");
+        transaccion.IdImpuesto = _validacionService.ValidarTipo("Tipo de impuesto: ");
         
         _transaccionRepository.AgregarTransaccion(transaccion);
     }

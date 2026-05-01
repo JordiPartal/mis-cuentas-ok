@@ -119,12 +119,12 @@ public class ValidacionService : IValidacionService
         
         return entrada switch
         {
-            "NOMINA"   => (int)tipoTransaccion.Nomina,
-            "RENTING"  => (int)tipoTransaccion.Renting,
-            "TRANSPORTE" => (int)tipoTransaccion.Transporte,
-            "OCIO"     => (int)tipoTransaccion.Ocio,
-            "INGRESO"  => (int)tipoTransaccion.Ingreso,
-            _          => (int)tipoTransaccion.Simple
+            "NOMINA"   => (int)TipoTransaccion.Nomina,
+            "RENTING"  => (int)TipoTransaccion.Renting,
+            "TRANSPORTE" => (int)TipoTransaccion.Transporte,
+            "OCIO"     => (int)TipoTransaccion.Ocio,
+            "INGRESO"  => (int)TipoTransaccion.Ingreso,
+            _          => (int)TipoTransaccion.Simple
         };
     }
 
@@ -145,12 +145,12 @@ public class ValidacionService : IValidacionService
 
         return entrada switch
         {
-            0 => (int)tipoImpuesto.SIN,
-            4 => (int)tipoImpuesto.IVA4,
-            10 => (int)tipoImpuesto.IVA10,
-            21 => (int)tipoImpuesto.IVA21,
-            15 => (int)tipoImpuesto.IRPF15,
-            _ => (int)tipoImpuesto.SIN
+            0 => (int)TipoImpuesto.Sin,
+            4 => (int)TipoImpuesto.Iva4,
+            10 => (int)TipoImpuesto.Iva10,
+            21 => (int)TipoImpuesto.Iva21,
+            15 => (int)TipoImpuesto.Irpf15,
+            _ => (int)TipoImpuesto.Sin
         };
     }
 }

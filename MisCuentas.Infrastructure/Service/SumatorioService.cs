@@ -78,6 +78,9 @@ public class SumatorioService : IMenuCommand, ISumatorioService
         _imprimirConsolaServices.Sumatorios(sumatorios);
         
         if(_exportarConfig.Exportar) _csvService.ExportarCSV(sumatorios, nombre);
+        
+        _exportarConfig.Exportar = false;
+        _exportarConfig.NombreFichero = string.Empty;
     }
 
     /// <summary>

@@ -1,10 +1,11 @@
 using System.Data;
 using MisCuentas.Domain.Interface.Repository;
 using MisCuentas.Domain.Models;
-using MisCuentas.Infrastructure.Tmp.Utils;
+using MisCuentas.Domain.Enums;
+using MisCuentas.Infrastructure.Data;
 using MySql.Data.MySqlClient;
 
-namespace MisCuentas.Infrastructure.Data.Repository;
+namespace MisCuenta.Infrastructure.Repository;
 
 public class TransaccionRepository : ITransaccionRepository
 {
@@ -25,7 +26,7 @@ public class TransaccionRepository : ITransaccionRepository
         conn.Open();
 
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = Consulta.Transacciones.obtener;
+        cmd.CommandText = SpTransacciones.SP_Transacciones.ToString();
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
         cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
@@ -35,12 +36,12 @@ public class TransaccionRepository : ITransaccionRepository
         {
             transacciones.Add(new Transaccion()
             {
-                fechaCargo = lector.IsDBNull(0) ? DateTime.Now : lector.GetDateTime(0),
-                tipo = lector.IsDBNull(1) ? "N/D" : lector.GetString(1),
-                concepto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
-                _base = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
-                cuota = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
-                cantidad = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5))
+                FechaCargo = lector.IsDBNull(0) ? DateTime.Now : lector.GetDateTime(0),
+                Tipo = lector.IsDBNull(1) ? "N/D" : lector.GetString(1),
+                Concepto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
+                BaseImponible = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
+                Cuota = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
+                Cantidad = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5))
             });
         }
         
@@ -61,7 +62,7 @@ public class TransaccionRepository : ITransaccionRepository
         await conn.OpenAsync();
 
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = Consulta.Transacciones.obtener;
+        cmd.CommandText = SpTransacciones.SP_Transacciones.ToString();
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.AddWithValue("@mes", MySqlDbType.Int32).Value = mes.HasValue ? mes.Value : DBNull.Value;
         cmd.Parameters.AddWithValue("@ano", MySqlDbType.Int32).Value = ano.HasValue ? ano.Value : DBNull.Value;
@@ -71,13 +72,13 @@ public class TransaccionRepository : ITransaccionRepository
         {
             transacciones.Add(new Transaccion()
             {
-                id = id,
-                fechaCargo = lector.IsDBNull(0) ? DateTime.Now : lector.GetDateTime(0),
-                tipo = lector.IsDBNull(1) ? "N/D" : lector.GetString(1),
-                concepto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
-                _base = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
-                cuota = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
-                cantidad = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5))
+                Id = id,
+                FechaCargo = lector.IsDBNull(0) ? DateTime.Now : lector.GetDateTime(0),
+                Tipo = lector.IsDBNull(1) ? "N/D" : lector.GetString(1),
+                Concepto = lector.IsDBNull(2) ? "N/D" : lector.GetString(2),
+                BaseImponible = lector.IsDBNull(3) ? 0 : Convert.ToDecimal(lector.GetValue(3)),
+                Cuota = lector.IsDBNull(4) ? 0 : Convert.ToDecimal(lector.GetValue(4)),
+                Cantidad = lector.IsDBNull(5) ? 0 : Convert.ToDecimal(lector.GetValue(5))
             });
             id++;
         }
@@ -95,13 +96,13 @@ public class TransaccionRepository : ITransaccionRepository
         conn.Open();
         
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = Consulta.Transacciones.inserta;
+        cmd.CommandText = SpTransacciones.SP_Insertar_Transaccion.ToString();
         cmd.CommandType = CommandType.StoredProcedure;
-        cmd.Parameters.AddWithValue("@fecha", transaccion.fechaCargo);
-        cmd.Parameters.AddWithValue("@concepto", transaccion.concepto);
-        cmd.Parameters.AddWithValue("@cantidad", transaccion.cantidad);
-        cmd.Parameters.AddWithValue("@categoria", transaccion.idtipo);
-        cmd.Parameters.AddWithValue("@impuesto", transaccion.idImpuesto);
+        cmd.Parameters.AddWithValue("@fecha", transaccion.FechaCargo);
+        cmd.Parameters.AddWithValue("@concepto", transaccion.Concepto);
+        cmd.Parameters.AddWithValue("@cantidad", transaccion.Cantidad);
+        cmd.Parameters.AddWithValue("@categoria", transaccion.IdTipo);
+        cmd.Parameters.AddWithValue("@impuesto", transaccion.IdImpuesto);
         
         cmd.ExecuteNonQuery();
     }
